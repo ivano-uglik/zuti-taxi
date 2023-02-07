@@ -6,12 +6,14 @@ import Kontakt from "./assets/pages/Kontakt";
 import Usluge from "./assets/pages/Usluge";
 import ScrollTop from "./components/ScrollTop";
 import Footer from "./components/Footer";
+import ImgTemp from "./components/ImgTemp";
 
 const App = () => {
   return (
     <div>
       <NumberNavbar />
       <Navbar />
+      <ImgTemp />
       {/* <Naslovna /> */}
       <Usluge />
       <Kontakt />

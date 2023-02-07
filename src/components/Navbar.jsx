@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../assets/Logo.png";
 import HRV from "../assets/HRV.png";
 import { Link } from "react-scroll";
+
 const Navbar = () => {
   return (
     <div className="bg-taxiYellow py-5 md:py-7 relative" id="navbar">
