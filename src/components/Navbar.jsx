@@ -1,6 +1,7 @@
 import React from "react";
-import Logo from "../assets/Logo.png";
-import HRV from "../assets/HRV.png";
+import Logo from "../assets/images/Logo.png";
+import HRV from "../assets/images/HRV.png";
+import Dropdown from "./Dropdown";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -48,13 +49,14 @@ const Navbar = () => {
             </Link>
           </button>
         </div>
-        <div className="hidden w-full md:flex md:flex-row md:w-auto">
+        <div className="hidden w-full md:flex md:flex-row md:w-auto relative">
           <a href="#" className="flex">
             <div className="w-full">
               <img src={HRV} alt="" className="w-8 pr-2" />
             </div>
             <span className="pr-2">HR</span>
             <span>&#9660;</span>
+            <Dropdown />
           </a>
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Phone from "../assets/Phone.png";
+import Phone from "../assets/images/Phone.png";
 const NumberNavbar = () => {
   return (
     <div>
