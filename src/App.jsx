@@ -14,7 +14,7 @@ const App = () => {
       <NumberNavbar />
       <Navbar />
       <ImgTemp />
-      {/* <Naslovna /> */}
+      <Naslovna />
       <Usluge />
       <Kontakt />
       <ScrollTop />
