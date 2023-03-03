@@ -19,6 +19,14 @@
   background-size: cover;
 }
 
+.taxiTEMPone {
+  background: url("assets/images/taxiTEMPone.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .glassmorphismBlack {
   /* From https://css.glass */
   background: rgba(0, 0, 0, 0.71);

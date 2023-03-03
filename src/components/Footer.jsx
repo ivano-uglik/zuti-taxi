@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="pt-16 taxiTEMP">
+    <div className="">
       <footer className="text-xs md:text-base flex w-full flex-row bg-gray-900 text-taxiYellow justify-center font-light py-2 md:py-4">
         <div className="flex justify-center flex-col md:flex-row text-center">
           <h1>&#169; 2023 - Žuti Taxi Vinkovci. Sva prava pridržana.&nbsp;</h1>

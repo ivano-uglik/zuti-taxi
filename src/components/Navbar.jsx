@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="hidden w-full md:block md:w-auto">
           <button>
             <Link
-              to="/"
+              to="naslovna"
               spy={true}
               smooth={true}
               offset={50}

@@ -6,3 +6,5 @@
 - update slow scroll with hooks
 - fix blackAndYellow under navbar (animation?!?!?!?)
 - gallery swiping on mobile in "Naslovnica"
+
+- usluge center of screen

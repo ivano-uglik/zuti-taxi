@@ -7,8 +7,8 @@ import WhatsappLogo from "../assets/images/Whatsapp_logo.png";
 
 const Kontakt = () => {
   return (
-    <div className="overflow-hidden taxiTEMP" id="kontakt">
-      <div className="relative md:w-screen md:h-screen">
+    <div className="overflow-hidden" id="kontakt">
+      <div className="relative md:w-screen md:h-[70vh]">
         <div className="flex justify-center pt-8 pb-12 font-bold text-3xl md:text-4xl text-taxiYellow">
           <h1>Kontakt</h1>
         </div>
