@@ -19,7 +19,7 @@ const Navbar = () => {
               smooth={true}
               offset={50}
               duration={500}
-              className="pr-8 text-xl font-semibold"
+              className="pr-8 text-lg"
             >
               Naslovna
             </Link>

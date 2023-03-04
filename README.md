@@ -2,9 +2,11 @@
 
 - compress images
 - dropodwn menu for navbar & language
-- link on Kontakti & styling
 - update slow scroll with hooks
 - fix blackAndYellow under navbar (animation?!?!?!?)
-- gallery swiping on mobile in "Naslovnica"
-
-- usluge center of screen
+- gallery swiping in "Naslovnica"
+- partneri
+- strelice center
+- ANIMACIJEEEE
+- iframe facebook
+- sticky scroll to top on 125% window height

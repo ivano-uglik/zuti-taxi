@@ -133,13 +133,13 @@ const CjenikKontakt = () => {
         </section>
       </div>
       <div className="hidden md:block" id="cjenik">
-        <div className="w-screen h-screen bg-purple-900 flex flex-row basis-1/2">
+        <div className="w-screen h-screen flex flex-row basis-1/2">
           <section className="bg-taxiBlack w-full">
             <div className="text-taxiYellow font-bold text-4xl flex justify-center py-16">
               <h1>Cjenik</h1>
             </div>
-            <div className="h-[83%] w-full grid place-items-center">
-              <div className="h-[80%] w-[80%] bg-taxiYellow px-32 pt-8 text-taxiBlack ">
+            <div className="grid place-items-center rounded">
+              <div className="h-full w-[80%] bg-taxiYellow px-32 pt-8 text-taxiBlack rounded-lg">
                 <div className="flex items-center flex-col">
                   <h1 className="font-bold text-3xl ">Gradska Vožnja</h1>
                   <h3 className="text-xl">00-24h</h3>
@@ -163,7 +163,7 @@ const CjenikKontakt = () => {
                     sat se uključuje po dolasku pred adresu korisnika.
                   </span>
                 </div>
-                <div className="flex items-center flex-col pt-8">
+                <div className="flex items-center flex-col pt-16">
                   <h1 className="font-bold text-3xl pb-4">Izvan Vinkovaca</h1>
                   <hr className="border-1 border-taxiBlack w-full py-2" />
                   <div className="flex flex-row justify-between w-full xl:px-4">
@@ -191,10 +191,51 @@ const CjenikKontakt = () => {
             <div className="text-taxiBlack font-bold text-4xl flex justify-center py-16">
               <h1>Kontakt</h1>
             </div>
-            <div className="h-[83%] w-full grid place-items-center">
-              <div className="h-[80%] w-[80%] bg-taxiBlack">
-                <div className="flex justify-center p-4 text-taxiYellow">
-                  <h1>Gradska Vozhnja</h1>
+            <div className="grid place-items-center">
+              <div className="h-full w-[80%] bg-taxiBlack px-32 pt-8 text-taxiYellow rounded-lg">
+                <div className="flex items-center flex-col">
+                  <h1 className="font-bold text-3xl ">Gradska Vožnja</h1>
+                  <h3 className="text-xl">00-24h</h3>
+                  <h3 className="text-xl">Maks. 4 osobe</h3>
+                  <h3 className="text-xl">3km</h3>
+                  <h1 className="font-bold text-4xl py-4">
+                    3,00 &euro; / 22,60kn
+                  </h1>
+                  <hr className="border-1 border-taxiYellow w-full py-2" />
+                  <div className="flex flex-row justify-between w-full xl:px-4">
+                    <h3 className="">Vožnja po km</h3>
+                    <h3 className="">0,80 &euro; / 6,02kn</h3>
+                  </div>
+                  <div className="flex flex-row justify-between w-full xl:px-4 pb-4">
+                    <h3>Čekanje po satu</h3>
+                    <h3>8,00 &euro; / 60,27kn</h3>
+                  </div>
+                  <hr className="border-1 border-taxiYellow w-full" />
+                  <span className="text-center opacity-50 pt-4">
+                    Vožnja unutar Vinkovaca obavlja se po cjeniku usluga. Taxi
+                    sat se uključuje po dolasku pred adresu korisnika.
+                  </span>
+                </div>
+                <div className="flex items-center flex-col pt-16">
+                  <h1 className="font-bold text-3xl pb-4">Izvan Vinkovaca</h1>
+                  <hr className="border-1 border-taxiYellow w-full py-2" />
+                  <div className="flex flex-row justify-between w-full xl:px-4">
+                    <h3 className="">Zagreb</h3>
+                    <h3 className="">240,00 &euro; / 1808,28kn</h3>
+                  </div>
+                  <div className="flex flex-row justify-between w-full xl:px-4">
+                    <h3 className="">Vukovar</h3>
+                    <h3 className="">16,00 &euro; / 120,55kn</h3>
+                  </div>
+                  <div className="flex flex-row justify-between w-full xl:px-4 pb-4">
+                    <h3>Vukovar</h3>
+                    <h3>16,00 &euro; / 120,55kn</h3>
+                  </div>
+                  <hr className="border-1 border-taxiYellow w-full" />
+                  <span className="text-center opacity-50 pt-4 pb-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Blanditiis saepe unde delectus explicabo quae, sit quo.
+                  </span>
                 </div>
               </div>
             </div>
