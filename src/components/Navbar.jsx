@@ -43,9 +43,21 @@ const Navbar = () => {
               smooth={true}
               offset={0}
               duration={500}
-              className="text-lg"
+              className="pr-8 text-lg"
             >
               Kontakt
+            </Link>
+          </button>
+          <button>
+            <Link
+              to="partneri"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              className="text-lg"
+            >
+              Partneri
             </Link>
           </button>
         </div>

@@ -4,7 +4,8 @@
 }
 .glassmorphism {
   /* From https://css.glass */
-  background: rgba(253, 190, 14, 0.5);
+  /* background: rgba(253, 190, 14, 0.5); */
+  background: #fdbe0e;
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.4px);

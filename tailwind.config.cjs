@@ -5,6 +5,7 @@ module.exports = {
   theme: {
     colors: {
       taxiYellow: "#fdbe0e",
+      taxiBlack: "#241e1e",
       transparent: "transparent",
       current: "currentColor",
       black: colors.black,

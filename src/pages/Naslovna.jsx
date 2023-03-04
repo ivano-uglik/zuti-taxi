@@ -4,8 +4,8 @@ import rightArrow from "../assets/images/RightArrow.png";
 
 const Naslovna = () => {
   return (
-    <div className="overflow-hidden taxiTEMP" id="naslovna">
-      <div className="flex flex-col w-screen h-screen justify-around py-36 md:py-auto md:justify-center md:gap-24">
+    <div className="overflow-hidden taxiTEMP">
+      <div className="flex flex-col w-screen h-[82vh] justify-around py-36 md:py-auto md:justify-center md:gap-24">
         <div className="flex items-center justify-center">
           <div className="flex">
             <h1 className="md:p-8 glassmorphismBlack text-taxiYellow mx-8 md:mx-auto md:px-auto  text-2xl md:text-4xl font-semibold rounded-full text-center">
