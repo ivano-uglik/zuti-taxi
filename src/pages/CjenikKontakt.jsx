@@ -4,11 +4,15 @@ import Facebook from "../assets/images/Facebook.png";
 import Whatsapp from "../assets/images/Whatsapp.png";
 import Viber from "../assets/images/Viber.png";
 import WhatsappLogo from "../assets/images/Whatsapp_logo.png";
+import PhoneInvert from "../assets/images/PhoneInvert.png";
+import WhatsappInvert from "../assets/images/WhatsappInvert.png";
+import ViberButton from "../assets/images/ViberButton.png";
+import FacebookInvert from "../assets/images/FacebookInvert.png";
 
 const CjenikKontakt = () => {
   return (
     <div className="overflow-x-hidden" id="kontakt">
-      {/* CJENIK & KONTAKT HIDDEN */}
+      {/* CJENIK & KONTAKT HIDDEN MOBILE*/}
       <div className="block md:hidden">
         {/* CJENIK HIDDEN */}
         <div id="kontakt">
@@ -132,13 +136,14 @@ const CjenikKontakt = () => {
           </article>
         </section>
       </div>
+      {/* CJENIK & KONTAKT HIDDEN DESKTOP*/}
       <div className="hidden md:block" id="cjenik">
         <div className="w-screen h-screen flex flex-row basis-1/2">
-          <section className="bg-taxiBlack w-full">
+          <section className="bg-taxiBlack w-full h-full">
             <div className="text-taxiYellow font-bold text-4xl flex justify-center py-16">
               <h1>Cjenik</h1>
             </div>
-            <div className="grid place-items-center rounded">
+            <div className="grid place-items-center">
               <div className="h-full w-[80%] bg-taxiYellow px-32 pt-8 text-taxiBlack rounded-lg">
                 <div className="flex items-center flex-col">
                   <h1 className="font-bold text-3xl ">Gradska Vožnja</h1>
@@ -187,55 +192,49 @@ const CjenikKontakt = () => {
               </div>
             </div>
           </section>
-          <section className="bg-taxiYellow w-full">
+          <section className="bg-taxiYellow w-full h-full">
             <div className="text-taxiBlack font-bold text-4xl flex justify-center py-16">
               <h1>Kontakt</h1>
             </div>
-            <div className="grid place-items-center">
+            <div className="grid place-items-center text-center h-[43rem]">
               <div className="h-full w-[80%] bg-taxiBlack px-32 pt-8 text-taxiYellow rounded-lg">
-                <div className="flex items-center flex-col">
-                  <h1 className="font-bold text-3xl ">Gradska Vožnja</h1>
-                  <h3 className="text-xl">00-24h</h3>
-                  <h3 className="text-xl">Maks. 4 osobe</h3>
-                  <h3 className="text-xl">3km</h3>
-                  <h1 className="font-bold text-4xl py-4">
-                    3,00 &euro; / 22,60kn
-                  </h1>
-                  <hr className="border-1 border-taxiYellow w-full py-2" />
-                  <div className="flex flex-row justify-between w-full xl:px-4">
-                    <h3 className="">Vožnja po km</h3>
-                    <h3 className="">0,80 &euro; / 6,02kn</h3>
+                <div className="flex items-center flex-col py-8">
+                  <div className="flex flex-row gap-4">
+                    <div className="flex justify-center">
+                      <div className="bg-taxiYellow rounded-full h-full">
+                        <img src={PhoneInvert} className="w-8 m-4" />
+                      </div>
+                    </div>
+                    <div className="flex justify-center">
+                      <div className="bg-taxiYellow rounded-full h-full">
+                        <img src={WhatsappInvert} className="w-8 m-4" />
+                      </div>
+                    </div>
+                    <div className="flex justify-center">
+                      <div className="bg-taxiYellow rounded-full h-full">
+                        <img src={ViberButton} className="w-8 m-4" />
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex flex-row justify-between w-full xl:px-4 pb-4">
-                    <h3>Čekanje po satu</h3>
-                    <h3>8,00 &euro; / 60,27kn</h3>
+                  <div className="pt-8">
+                    <h1 className="text-xl">
+                      Nazovite ili pošaljite SMS poruku na:{" "}
+                    </h1>
+                    <h1 className="font-bold text-4xl py-4">099 230 2000</h1>
+                    <h1 className="text-lg">SMS | Viber | Whatsapp</h1>
                   </div>
-                  <hr className="border-1 border-taxiYellow w-full" />
-                  <span className="text-center opacity-50 pt-4">
-                    Vožnja unutar Vinkovaca obavlja se po cjeniku usluga. Taxi
-                    sat se uključuje po dolasku pred adresu korisnika.
-                  </span>
-                </div>
-                <div className="flex items-center flex-col pt-16">
-                  <h1 className="font-bold text-3xl pb-4">Izvan Vinkovaca</h1>
-                  <hr className="border-1 border-taxiYellow w-full py-2" />
-                  <div className="flex flex-row justify-between w-full xl:px-4">
-                    <h3 className="">Zagreb</h3>
-                    <h3 className="">240,00 &euro; / 1808,28kn</h3>
+                  <div className="bg-taxiYellow rounded-full h-full mt-8">
+                    <img src={FacebookInvert} className="w-8 m-4" />
                   </div>
-                  <div className="flex flex-row justify-between w-full xl:px-4">
-                    <h3 className="">Vukovar</h3>
-                    <h3 className="">16,00 &euro; / 120,55kn</h3>
+                  <div>
+                    <h1 className="mt-8 text-xl">
+                      Posjetite našu Facebook stranicu ili pošaljite poruku na
+                      naš Messenger:
+                    </h1>
+                    <h1 className="py-4 text-4xl font-bold underline">
+                      Žuti Taxi Vinkovci
+                    </h1>
                   </div>
-                  <div className="flex flex-row justify-between w-full xl:px-4 pb-4">
-                    <h3>Vukovar</h3>
-                    <h3>16,00 &euro; / 120,55kn</h3>
-                  </div>
-                  <hr className="border-1 border-taxiYellow w-full" />
-                  <span className="text-center opacity-50 pt-4 pb-8">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Blanditiis saepe unde delectus explicabo quae, sit quo.
-                  </span>
                 </div>
               </div>
             </div>

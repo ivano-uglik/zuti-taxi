@@ -11,6 +11,7 @@ const Footer = () => {
             <a
               href="https://github.com/ivano-uglik/zuti-taxi"
               className="underline"
+              target="_blank"
             >
               GitHub
             </a>
