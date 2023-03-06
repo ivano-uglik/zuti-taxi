@@ -92,7 +92,7 @@ const CjenikKontakt = () => {
           </div>
         </div>
         {/* // KONTAKT HIDDEN*/}
-        <div className="flex md:hidden justify-center pt- pb-12 font-bold text-3xl md:text-4xl text-taxiYellow">
+        <div className="flex md:hidden justify-center pt-8 pb-12 font-bold text-3xl md:text-4xl text-taxiYellow">
           <h1>Kontakt</h1>
         </div>
         <section className="flex md:hidden flex-col md:flex-row md:h-96 justify-center text-center md:gap-x-16 mx-8 md:mx-auto mb-12">
