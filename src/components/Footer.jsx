@@ -4,23 +4,46 @@ import OptikaMarko from "../assets/images/OptikaMarko.jpg";
 
 const Footer = () => {
   return (
-    <div className="">
-      <footer className="text-xs md:text-base flex w-full flex-row bg-gray-900 text-taxiYellow justify-around font-light py-2 md:py-4 px-36">
-        <div className="flex flex-row gap-8">
-          <img
-            src={PlavaVinkovacka}
-            alt="Plava Vinkovačka"
-            className="w-16 h-16"
-          />
-          <img src={OptikaMarko} alt="Optika Marko" className="w-16 h-16" />
-          <img
-            src={PlavaVinkovacka}
-            alt="Plava Vinkovačka"
-            className="w-16 h-16"
-          />
+    <div className="overflow-hidden">
+      <footer className="text-xs md:text-base flex w-full flex-col bg-gray-900 text-taxiYellow justify-around font-light py-2 md:py-4 lg:px-36">
+        <div className="flex flex-row gap-4 md:gap-8 justify-center py-4">
+          <div className="flex flex-row gap-4 md:gap-8">
+            <img
+              src={PlavaVinkovacka}
+              alt="Plava Vinkovačka"
+              className="w-16 h-16 md:w-32 md:h-32"
+            />
+            <img
+              src={OptikaMarko}
+              alt="Optika Marko"
+              className="w-16 h-16 md:w-32 md:h-32"
+            />
+            <img
+              src={PlavaVinkovacka}
+              alt="Plava Vinkovačka"
+              className="w-16 h-16 md:w-32 md:h-32"
+            />
+          </div>
+          <div className="flex flex-row gap-4 md:gap-8">
+            <img
+              src={PlavaVinkovacka}
+              alt="Plava Vinkovačka"
+              className="w-16 h-16 md:w-32 md:h-32"
+            />
+            <img
+              src={OptikaMarko}
+              alt="Plava Vinkovačka"
+              className="w-16 h-16 md:w-32 md:h-32"
+            />
+            <img
+              src={PlavaVinkovacka}
+              alt="Plava Vinkovačka"
+              className="w-16 h-16 md:w-32 md:h-32"
+            />
+          </div>
         </div>
-        <div className="flex justify-center flex-col md:flex-row text-center items-center">
-          <h1>&#169; 2023 - Žuti Taxi Vinkovci. Sva prava pridržana.&nbsp;</h1>
+        <div className="flex justify-center flex-col text-center items-center py-4 text-base">
+          <h1>&#169; 2023 - Žuti Taxi Vinkovci. Sva prava pridržana.</h1>
           <h1>
             Izrada web stranice - Ivano Uglik&nbsp;|&nbsp;
             <a
@@ -31,19 +54,6 @@ const Footer = () => {
               GitHub
             </a>
           </h1>
-        </div>
-        <div className="flex flex-row gap-8">
-          <img
-            src={PlavaVinkovacka}
-            alt="Plava Vinkovačka"
-            className="w-16 h-16"
-          />
-          <img src={OptikaMarko} alt="Plava Vinkovačka" className="w-16 h-16" />
-          <img
-            src={PlavaVinkovacka}
-            alt="Plava Vinkovačka"
-            className="w-16 h-16"
-          />
         </div>
       </footer>
     </div>

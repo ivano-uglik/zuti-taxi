@@ -17,7 +17,7 @@ const CjenikKontakt = () => {
         {/* CJENIK HIDDEN */}
         <div id="kontakt">
           <div>
-            <div className=" md:w-screen md:h-screen flex justify-center flex-col w-full h-full">
+            <div className=" md:w-screen md:h-screen flex justify-center flex-col w-full h-full bg-taxiBlack pb-8">
               <div className="flex md:hidden justify-center py-8 font-bold text-3xl md:text-4xl text-taxiYellow">
                 <h1>Cjenik</h1>
               </div>
@@ -92,49 +92,51 @@ const CjenikKontakt = () => {
           </div>
         </div>
         {/* // KONTAKT HIDDEN*/}
-        <div className="flex md:hidden justify-center pt-8 pb-12 font-bold text-3xl md:text-4xl text-taxiYellow">
-          <h1>Kontakt</h1>
-        </div>
-        <section className="flex md:hidden flex-col md:flex-row md:h-96 justify-center text-center md:gap-x-16 mx-8 md:mx-auto mb-12">
-          <article className="glassmorphism p-8 md:basis-1/4 mb-12 md:mb-auto h-full">
-            <div className="flex justify-center">
-              <span className="p-8 absolute glassmorphismBlack rounded-full top-[-2rem]"></span>
-              <img src={Facebook} className="w-8 absolute top-[-1rem]" />
-            </div>
-            <div className="flex flex-col pt-6 h-full gap-y-8">
-              <h1 className="text-lg">
-                Posjetite našu Facebook stranicu ili pošaljite poruku na naš
-                Messenger:{" "}
-              </h1>
-              <a
-                href="https://web.facebook.com/people/%C5%BDuti-Taxi-Vinkovci/100057088434942/"
-                className="underline text-3xl font-semibold"
-                target={"_blank"}
-              >
-                Žuti Taxi Vinkovci
-              </a>
-            </div>
-          </article>
-          <article className="glassmorphism p-8 md:basis-1/4 mb-12 md:mb-auto h-full">
-            <div className="flex justify-center">
-              <span className="p-8 absolute glassmorphismBlack rounded-full top-[-2rem]"></span>
-              <img src={Phone} className="w-8 absolute top-[-1rem]" />
-            </div>
-            <div className="flex flex-col justify-around h-full gap-y-8">
-              <div className="">
-                <h2 className="text-lg">
-                  Nazovite ili pošaljite SMS poruku na:
-                </h2>
-                <h1 className="text-4xl font-bold py-8">099 230 2000</h1>
-                <h1>SMS | Viber | WhatsApp</h1>
+        <div className="bg-taxiYellow">
+          <div className="flex md:hidden justify-center pt-8 pb-12 font-bold text-3xl md:text-4xl text-taxiBlack">
+            <h1>Kontakt</h1>
+          </div>
+          <section className="flex md:hidden flex-col md:flex-row md:h-96 justify-center text-center md:gap-x-16 mx-8 md:mx-auto mb-12 text-taxiYellow">
+            <article className="bg-taxiBlack backdrop-blur-none rounded-[16px] p-8 md:basis-1/4 mb-12 md:mb-auto h-full">
+              <div className="flex justify-center">
+                <span className="p-8 absolute glassmorphismBlack rounded-full top-[-2rem]"></span>
+                <img src={Facebook} className="w-8 absolute top-[-1rem]" />
               </div>
-              <p className="text-xs font-light opacity-80">
-                *Ovisno o Vašem mobilnom operateru, standardne tarife poziva i
-                SMS-a se primijenjuju.
-              </p>
-            </div>
-          </article>
-        </section>
+              <div className="flex flex-col pt-6 h-full gap-y-8">
+                <h1 className="text-lg">
+                  Posjetite našu Facebook stranicu ili pošaljite poruku na naš
+                  Messenger:{" "}
+                </h1>
+                <a
+                  href="https://web.facebook.com/people/%C5%BDuti-Taxi-Vinkovci/100057088434942/"
+                  className="underline text-3xl font-semibold"
+                  target={"_blank"}
+                >
+                  Žuti Taxi Vinkovci
+                </a>
+              </div>
+            </article>
+            <article className="bg-taxiBlack backdrop-blur-none rounded-2xl p-8 md:basis-1/4 mb-12 md:mb-auto h-full">
+              <div className="flex justify-center">
+                <span className="p-8 absolute glassmorphismBlack rounded-full top-[-2rem]"></span>
+                <img src={Phone} className="w-8 absolute top-[-1rem]" />
+              </div>
+              <div className="flex flex-col justify-around h-full gap-y-8">
+                <div className="">
+                  <h2 className="text-lg">
+                    Nazovite ili pošaljite SMS poruku na:
+                  </h2>
+                  <h1 className="text-4xl font-bold py-8">099 230 2000</h1>
+                  <h1>SMS | Viber | WhatsApp</h1>
+                </div>
+                <p className="text-xs font-light opacity-80">
+                  *Ovisno o Vašem mobilnom operateru, standardne tarife poziva i
+                  SMS-a se primijenjuju.
+                </p>
+              </div>
+            </article>
+          </section>
+        </div>
       </div>
       {/* CJENIK & KONTAKT HIDDEN DESKTOP*/}
       <div className="hidden md:block" id="cjenik">

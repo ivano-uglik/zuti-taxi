@@ -11,9 +11,10 @@ const ScrollTop = () => {
           smooth={true}
           offset={0}
           duration={1000}
-          className="font-semibold bg-taxiYellow rounded-2xl p-4 m-8 absolute right-0 bottom-0"
+          className="text-taxiYellow bg-taxiBlack p-4 m-8 cursor-pointer absolute right-0 bottom-0"
+          // &#x25B2;
         >
-          <button className="text-2xl">&#x25B2;</button>
+          <span>&#x25B2;</span>
         </Link>
       </div>
     </div>

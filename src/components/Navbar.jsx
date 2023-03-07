@@ -12,54 +12,36 @@ const Navbar = () => {
           <img src={Logo} alt="logo" className="w-36" />
         </a>
         <div className="hidden w-full md:block md:w-auto">
-          <button>
-            <Link
-              to="naslovna"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-              className="pr-8 text-lg"
-            >
-              Naslovna
-            </Link>
-          </button>
-          <button>
-            <Link
-              to="cjenik"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              className="pr-8 text-lg"
-            >
-              Cjenik
-            </Link>
-          </button>
-          <button>
-            <Link
-              to="kontakt"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              className="pr-8 text-lg"
-            >
-              Kontakt
-            </Link>
-          </button>
-          <button>
-            <Link
-              to="partneri"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-              className="text-lg"
-            >
-              Partneri
-            </Link>
-          </button>
+          <Link
+            to="naslovna"
+            spy={true}
+            smooth={true}
+            offset={50}
+            duration={500}
+            className="pr-8 text-lg"
+          >
+            <button>Naslovna </button>
+          </Link>
+          <Link
+            to="cjenik"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="pr-8 text-lg"
+          >
+            <button>Cjenik</button>
+          </Link>
+          <Link
+            to="kontakt"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+            className="text-lg"
+          >
+            <button>Kontakt</button>
+          </Link>
         </div>
         <div className="hidden w-full md:flex md:flex-row md:w-auto relative">
           <a href="#" className="flex">
