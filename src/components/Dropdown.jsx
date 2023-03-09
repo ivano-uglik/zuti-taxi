@@ -4,7 +4,7 @@ import ENG from "../assets/images/ENG.png";
 const Dropdown = () => {
   return (
     <div className="absolute top-8">
-      <div className="bg-black rounded-lg w-[4.7rem] text-taxiYellow py-1 text-end hidden">
+      <div className="bg-black rounded-lg w-[4.7rem] text-taxiYellow py-1 text-end">
         <div className="flex flex-row justify-between items-center py-2 px-1 hover:bg-taxiYellow hover:text-black">
           <img src={HRV} className="w-7 h-7" />
           <a href="#">HR</a>

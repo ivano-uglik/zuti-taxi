@@ -38,8 +38,17 @@
 }
 
 .blackAndYellow {
-  background-image: url("./assets/images/blackAndYellow.png");
-  background-repeat: repeat-x;
+  background-image: url("./assets/images/blackAndYellowNeoOne.png");
+  background-size: 1rem;
   background-size: contain;
-  background-size: 72rem;
+  animation: bannermove 52s linear infinite;
+}
+
+@keyframes bannermove {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 100000px;
+  }
 }
