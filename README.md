@@ -11,5 +11,3 @@
 - iframe facebook
 - sticky scroll to top on 125% window height
 - redo images kontakt desktop
-- images on partneri
-- side scroll animation on partneri?
