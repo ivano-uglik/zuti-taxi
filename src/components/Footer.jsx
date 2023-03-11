@@ -15,28 +15,6 @@ const Footer = () => {
             />
             <img
               src={OptikaMarko}
-              alt="Optika Marko"
-              className="w-16 h-16 md:w-32 md:h-32"
-            />
-            <img
-              src={PlavaVinkovacka}
-              alt="Plava Vinkovačka"
-              className="w-16 h-16 md:w-32 md:h-32"
-            />
-          </div>
-          <div className="flex flex-row gap-4 md:gap-8">
-            <img
-              src={PlavaVinkovacka}
-              alt="Plava Vinkovačka"
-              className="w-16 h-16 md:w-32 md:h-32"
-            />
-            <img
-              src={OptikaMarko}
-              alt="Plava Vinkovačka"
-              className="w-16 h-16 md:w-32 md:h-32"
-            />
-            <img
-              src={PlavaVinkovacka}
               alt="Plava Vinkovačka"
               className="w-16 h-16 md:w-32 md:h-32"
             />

@@ -3,10 +3,11 @@ import Logo from "../assets/images/Logo.png";
 import HRV from "../assets/images/HRV.png";
 import Dropdown from "./Dropdown";
 import { Link } from "react-scroll";
+import ImgTemp from "./ImgTemp";
 
 const Navbar = () => {
   return (
-    <div className="bg-taxiYellow py-5 md:py-7 relative" id="navbar">
+    <div className="bg-taxiYellow py-5 md:py-7" id="navbar">
       <div className="container flex items-center justify-center md:justify-between md:mx-auto ">
         <a href="#">
           <img src={Logo} alt="logo" className="w-36" />

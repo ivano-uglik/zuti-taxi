@@ -2,7 +2,7 @@ import React from "react";
 import Phone from "../assets/images/Phone.png";
 const NumberNavbar = () => {
   return (
-    <div>
+    <div className="sticky top-0 z-10">
       <div className="flex justify-center bg-taxiBlack py-2">
         <div className="flex justify-between ">
           <div>
