@@ -8,9 +8,14 @@ const Naslovna = () => {
       <div className="flex flex-col w-screen h-[82vh] justify-around py-36 md:py-auto md:justify-center md:gap-24">
         <div className="flex items-center justify-center">
           <div className="flex">
-            <h1 className="md:p-8 bg-taxiBlack text-taxiYellow mx-8 md:mx-auto md:px-auto  text-2xl md:text-4xl font-semibold rounded-xl text-center">
-              Najbolja Taxi Služba u Vinkovcima i okolici!
-            </h1>
+            <div className="md:p-8 bg-taxiBlack text-taxiYellow mx-8 md:mx-auto md:px-auto  text-2xl md:text-4xl font-semibold rounded-xl text-center">
+              <h1 id="hr" className="hidden">
+                Najbolja Taxi Služba u Vinkovcima i okolici!
+              </h1>
+              <h1 id="en">
+                The Best Taxi Service in Vinkovci and the Sorrounding Area!
+              </h1>
+            </div>
           </div>
         </div>
         <div className="flex flex-row justify-center md:justify-between px-4 items-center">
