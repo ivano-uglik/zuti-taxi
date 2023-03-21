@@ -1,8 +1,0 @@
-{
-  "projects": {
-    "default": "zuti-taxi-68f3c",
-    "staging": "zuti-taxi-68f3c"
-  },
-  "targets": {},
-  "etags": {}
-}
