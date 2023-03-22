@@ -78,7 +78,7 @@ const Home = () => {
               <button>Kontakt</button>
             </Link1>
           </div>
-          <div className="hidden w-full md:flex md:flex-row md:w-auto relative">
+          <div className="hidden w-full md:flex md:flex-row md:w-auto relative z-50">
             <div
               onClick={() => {
                 document.getElementById("dropdown").classList.toggle("hidden");
@@ -114,9 +114,7 @@ const Home = () => {
       {/* IMG TEMP  */}
       <div className="w-full h-8 blackAndYellow"></div>
       {/* NASLOVNA */}
-      <div className="hidden md:block">
-        <DemoCarousel />
-      </div>
+      <DemoCarousel />
       {/* CJENIK I KONTAKT  */}
       <div className="overflow-x-hidden" id="kontakt">
         {/* CJENIK & KONTAKT HIDDEN MOBILE*/}
@@ -221,13 +219,24 @@ const Home = () => {
                     Posjetite našu Facebook stranicu ili pošaljite poruku na naš
                     Messenger:{" "}
                   </h1>
-                  <a
+                  {/* <a
                     href="https://web.facebook.com/people/%C5%BDuti-Taxi-Vinkovci/100057088434942/"
                     className="underline text-3xl font-semibold"
                     target={"_blank"}
                   >
                     Žuti Taxi Vinkovci
-                  </a>
+                  </a> */}
+                  <div className="flex justify-center">
+                    <iframe
+                      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100057088434942&tabs=timeline&width=200&height=100&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                      width="200"
+                      height="100"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                      className="border-none overflow-hidden"
+                    ></iframe>
+                  </div>
                 </div>
               </article>
               <article className="bg-taxiBlack backdrop-blur-none rounded-2xl p-8 md:basis-1/4 mb-12 md:mb-auto h-full">
@@ -252,6 +261,7 @@ const Home = () => {
             </section>
           </div>
         </div>
+
         {/* CJENIK & KONTAKT HIDDEN DESKTOP*/}
         <div className="hidden md:block" id="cjenik">
           <div className="w-screen h-screen flex flex-row basis-1/2">
@@ -262,7 +272,8 @@ const Home = () => {
               <div className="grid place-items-center">
                 <div className="h-full w-[80%] bg-taxiYellow px-32 pt-8 text-taxiBlack rounded-lg">
                   <div className="flex items-center flex-col">
-                    <h1 className="font-bold text-3xl ">Gradska Vožnja</h1>
+                    <h1 className="font-bold text-3xl pb-4">Gradska Vožnja</h1>
+                    <hr className="border-1 border-taxiBlack w-full py-2" />
                     <h3 className="text-xl">00-24h</h3>
                     <h3 className="text-xl">Maks. 4 osobe</h3>
                     <h3 className="text-xl">3km</h3>
@@ -274,11 +285,10 @@ const Home = () => {
                       <h3 className="">Vožnja po km</h3>
                       <h3 className="">0,80 &euro; / 6,02kn</h3>
                     </div>
-                    <div className="flex flex-row justify-between w-full xl:px-4 pb-4">
+                    <div className="flex flex-row justify-between w-full xl:px-4">
                       <h3>Čekanje po satu</h3>
                       <h3>8,00 &euro; / 60,27kn</h3>
                     </div>
-                    <hr className="border-1 border-taxiBlack w-full" />
                     <span className="text-center opacity-50 pt-4">
                       Vožnja unutar Vinkovaca obavlja se po cjeniku usluga. Taxi
                       sat se uključuje po dolasku pred adresu korisnika.
@@ -299,8 +309,7 @@ const Home = () => {
                       <h3>Vukovar</h3>
                       <h3>16,00 &euro; / 120,55kn</h3>
                     </div>
-                    <hr className="border-1 border-taxiBlack w-full" />
-                    <span className="text-center opacity-50 pt-4 pb-8">
+                    <span className="text-center opacity-50 pb-8">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Blanditiis saepe unde delectus explicabo quae, sit quo.
                     </span>
@@ -347,9 +356,20 @@ const Home = () => {
                         Posjetite našu Facebook stranicu ili pošaljite poruku na
                         naš Messenger:
                       </h1>
-                      <h1 className="py-4 text-4xl font-bold underline">
+                      {/* <h1 className="py-4 text-4xl font-bold underline">
                         Žuti Taxi Vinkovci
-                      </h1>
+                      </h1> */}
+                      <div className="flex justify-center mt-8">
+                        <iframe
+                          src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100057088434942&tabs=timeline&width=500&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                          width="500"
+                          height="130"
+                          frameborder="0"
+                          allowfullscreen="true"
+                          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                          className="border-none overflow-hidden"
+                        ></iframe>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -375,7 +395,7 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className="flex justify-center flex-col text-center items-center py-4 text-base">
+          <div className="flex justify-center flex-col text-center items-center py-4 text-xs md:text-base px-2">
             <h1>&#169; 2023 - Žuti Taxi Vinkovci. Sva prava pridržana.</h1>
             <h1>
               Izrada web stranice - Ivano Uglik&nbsp;|&nbsp;

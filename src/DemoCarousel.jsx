@@ -18,6 +18,8 @@ class DemoCarousel extends Component {
         stopOnHover={false}
         showThumbs={false}
         dynamicHeight={false}
+        transitionTime={1000}
+        interval={5000}
       >
         <div className="h-[82vh] ">
           <img
