@@ -4,5 +4,5 @@
 
 - clean up code
 - sync up Home and HomeEn
-
-- DEPLOY 🚀 🚀 🚀
+- add cjenik izvan Vinkovaca
+- mobile swipe down bug

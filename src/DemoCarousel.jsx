@@ -20,6 +20,7 @@ class DemoCarousel extends Component {
         dynamicHeight={false}
         transitionTime={1000}
         interval={5000}
+        swipeScrollTolerance={50}
       >
         <div className="h-[82vh] ">
           <img
