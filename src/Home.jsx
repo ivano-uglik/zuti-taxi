@@ -10,9 +10,6 @@ import PlavaVinkovacka from "./assets/images/PlavaVinkovacka.png";
 import OptikaMarko from "./assets/images/OptikaMarko.jpg";
 import Pattern from "./assets/images/blackAndYellow.png";
 import Facebook from "./assets/images/Facebook.png";
-import Whatsapp from "./assets/images/Whatsapp.png";
-import Viber from "./assets/images/Viber.png";
-import WhatsappLogo from "./assets/images/Whatsapp_logo.png";
 import PhoneInvert from "./assets/images/PhoneInvert.png";
 import WhatsappInvert from "./assets/images/WhatsappInvert.png";
 import ViberButton from "./assets/images/ViberButton.png";
@@ -20,21 +17,27 @@ import FacebookInvert from "./assets/images/FacebookInvert.png";
 import leftArrow from "./assets/images/LeftArrow.png";
 import rightArrow from "./assets/images/RightArrow.png";
 import HomeEn from "./HomeEn";
+import DemoCarousel from "./DemoCarousel";
+
 const Home = () => {
+  // var Carousel = require("react-responsive-carousel").Carousel;
+
   return (
     <div>
       {/* NUMBER NAVBAR */}
       <div className="sticky top-0 z-10">
         <div className="flex justify-center bg-taxiBlack py-2">
-          <div className="flex justify-between ">
-            <div>
-              <img src={Phone} className="w-8 pr-2" />
+          <a href="tel:+385992302000">
+            <div className="flex justify-between ">
+              <div>
+                <img src={Phone} className="w-8 pr-2" />
+              </div>
+              <h1 className="text-taxiYellow font-bold pr-2">099 230 2000</h1>
+              <div>
+                <img src={Phone} className="w-8 pr-2" />
+              </div>
             </div>
-            <h1 className="text-taxiYellow font-bold pr-2">099 230 2000</h1>
-            <div>
-              <img src={Phone} className="w-8 pr-2" />
-            </div>
-          </div>
+          </a>
         </div>
       </div>
       {/* NAVBAR */}
@@ -111,25 +114,8 @@ const Home = () => {
       {/* IMG TEMP  */}
       <div className="w-full h-8 blackAndYellow"></div>
       {/* NASLOVNA */}
-      <div className="overflow-hidden taxiTEMP">
-        <div className="flex flex-col w-screen h-[82vh] justify-around py-36 md:py-auto md:justify-center md:gap-24">
-          <div className="flex items-center justify-center">
-            <div className="flex">
-              <div className="md:p-8 bg-taxiBlack text-taxiYellow mx-8 md:mx-auto md:px-auto  text-2xl md:text-4xl font-semibold rounded-xl text-center">
-                <h1 className>Najbolja Taxi Služba u Vinkovcima i okolici!</h1>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-row justify-center md:justify-between px-4 items-center">
-            <img src={leftArrow} className="h-4 md:h-16 hidden md:block" />
-            <a href="tel:+385992302000">
-              <h1 className="text-3xl md:text-7xl font-extrabold bg-taxiBlack p-4 md:p-12 rounded-xl text-taxiYellow">
-                099 230 2000
-              </h1>
-            </a>
-            <img src={rightArrow} className="h-4 md:h-16 hidden md:block" />
-          </div>
-        </div>
+      <div className="hidden md:block">
+        <DemoCarousel />
       </div>
       {/* CJENIK I KONTAKT  */}
       <div className="overflow-x-hidden" id="kontakt">
@@ -224,7 +210,7 @@ const Home = () => {
             <div className="flex md:hidden justify-center pt-8 pb-12 font-bold text-3xl md:text-4xl text-taxiBlack">
               <h1>Kontakt</h1>
             </div>
-            <section className="flex md:hidden flex-col md:flex-row md:h-96 justify-center text-center md:gap-x-16 mx-8 md:mx-auto mb-12 text-taxiYellow">
+            <section className="flex md:hidden flex-col md:flex-row md:h-96 justify-center text-center md:gap-x-16 mx-8 md:mx-auto text-taxiYellow">
               <article className="bg-taxiBlack backdrop-blur-none rounded-[16px] p-8 md:basis-1/4 mb-12 md:mb-auto h-full">
                 <div className="flex justify-center">
                   <span className="p-8 absolute glassmorphismBlack rounded-full top-[-2rem]"></span>

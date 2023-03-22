@@ -3,22 +3,19 @@ import Logo from "./assets/images/Logo.png";
 import HRV from "./assets/images/HRV.png";
 import ENG from "./assets/images/ENG.png";
 import { Link as Link1 } from "react-scroll";
+import { Link } from "react-router-dom";
 import Phone from "./assets/images/Phone.png";
 import ImgTemp from "./components/ImgTemp";
 import PlavaVinkovacka from "./assets/images/PlavaVinkovacka.png";
 import OptikaMarko from "./assets/images/OptikaMarko.jpg";
 import Pattern from "./assets/images/blackAndYellow.png";
 import Facebook from "./assets/images/Facebook.png";
-import Whatsapp from "./assets/images/Whatsapp.png";
-import Viber from "./assets/images/Viber.png";
-import WhatsappLogo from "./assets/images/Whatsapp_logo.png";
 import PhoneInvert from "./assets/images/PhoneInvert.png";
 import WhatsappInvert from "./assets/images/WhatsappInvert.png";
 import ViberButton from "./assets/images/ViberButton.png";
 import FacebookInvert from "./assets/images/FacebookInvert.png";
 import leftArrow from "./assets/images/LeftArrow.png";
 import rightArrow from "./assets/images/RightArrow.png";
-import { Link } from "react-router-dom";
 const HomeEn = () => {
   return (
     <div>
@@ -53,7 +50,7 @@ const HomeEn = () => {
               duration={500}
               className="pr-8 text-lg"
             >
-              <button>Naslovna </button>
+              <button>Home</button>
             </Link1>
             <Link1
               to="cjenik"
@@ -63,7 +60,7 @@ const HomeEn = () => {
               duration={500}
               className="pr-8 text-lg"
             >
-              <button>Cjenik</button>
+              <button>Pricing</button>
             </Link1>
             <Link1
               to="kontakt"
@@ -73,7 +70,7 @@ const HomeEn = () => {
               duration={500}
               className="text-lg"
             >
-              <button>Kontakt</button>
+              <button>Contact Us</button>
             </Link1>
           </div>
           <div className="hidden w-full md:flex md:flex-row md:w-auto relative">
@@ -83,8 +80,8 @@ const HomeEn = () => {
               }}
             >
               <div className="flex justify-around cursor-pointer w-full gap-2">
-                <img src={HRV} alt="" className="w-6 h-6" />
-                <span className="">HR</span>
+                <img src={ENG} alt="" className="w-6 h-6" />
+                <span className="">EN</span>
                 <span>&#9660;</span>
 
                 <div
