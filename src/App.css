@@ -34,7 +34,7 @@
   background-image: url("./assets/images/blackAndYellowNeoOne.png");
   background-size: 1rem;
   background-size: contain;
-  animation: bannermove 52s linear infinite;
+  animation: bannermove 15s linear infinite;
 }
 
 @keyframes bannermove {
@@ -42,6 +42,6 @@
     background-position: 0;
   }
   100% {
-    background-position: 100000px;
+    background-position: 100vw;
   }
 }

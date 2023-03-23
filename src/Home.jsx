@@ -24,9 +24,9 @@ const Home = () => {
 
   return (
     <div>
-      {/* NUMBER NAVBAR */}
+      {/* NUMBER NAVBAR, 5vh */}
       <div className="sticky top-0 z-10">
-        <div className="flex justify-center bg-taxiBlack py-2">
+        <div className="flex justify-center bg-taxiBlack h-[5vh] items-center">
           <a href="tel:+385992302000">
             <div className="flex justify-between ">
               <div>
@@ -41,8 +41,8 @@ const Home = () => {
         </div>
       </div>
       {/* NAVBAR */}
-      <div className="bg-taxiYellow py-5 md:py-7" id="navbar">
-        <div className="container flex items-center justify-center md:justify-between md:mx-auto ">
+      <div className="bg-taxiYellow h-[10vh] flex items-center" id="navbar">
+        <div className="flex items-center justify-center md:justify-around md:mx-auto w-full ">
           <a href="#">
             <img src={Logo} alt="logo" className="w-36" />
           </a>
@@ -84,8 +84,8 @@ const Home = () => {
                 document.getElementById("dropdown").classList.toggle("hidden");
               }}
             >
-              <div className="flex justify-around cursor-pointer w-full gap-2">
-                <img src={HRV} alt="" className="w-6 h-6" />
+              <div className="flex justify-around items-center cursor-pointer w-full gap-2">
+                <img src={HRV} alt="" className="w-7 h-7" />
                 <span className="">HR</span>
                 <span>&#9660;</span>
 

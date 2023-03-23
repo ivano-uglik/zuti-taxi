@@ -12,7 +12,6 @@ class DemoCarousel extends Component {
     return (
       <Carousel
         autoPlay={true}
-        swipeable={true}
         infiniteLoop={true}
         selectedItem={0}
         stopOnHover={false}
@@ -20,7 +19,7 @@ class DemoCarousel extends Component {
         dynamicHeight={false}
         transitionTime={1000}
         interval={5000}
-        swipeScrollTolerance={50}
+        swipeable={false}
       >
         <div className="h-[82vh] ">
           <img
