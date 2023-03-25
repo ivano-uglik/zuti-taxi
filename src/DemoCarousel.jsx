@@ -20,6 +20,7 @@ class DemoCarousel extends Component {
         transitionTime={1000}
         interval={5000}
         swipeable={false}
+        showStatus={false}
       >
         <div className="h-[82vh] object-cover">
           <img

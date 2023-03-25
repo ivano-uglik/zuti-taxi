@@ -36,9 +36,26 @@
   background-size: contain;
   animation: bannermove 15s linear infinite;
 }
+
+.blackAndYellowStatic {
+  background-image: url("./assets/images/blackAndYellowNeoOne.png");
+  background-size: 1rem;
+  background-size: contain;
+}
 .half {
   background: linear-gradient(to left, #fdbe0e 50vw, #241e1e 50vw);
 }
+
+.halfInvert {
+  background: linear-gradient(to top, #241e1e 50%, #fdbe0e 50%);
+}
+
+@media (min-width: 768px) {
+  .halfInvert {
+    background: linear-gradient(to left, #241e1e 50vw, #fdbe0e 50vw);
+  }
+}
+
 @keyframes bannermove {
   0% {
     background-position: 0;

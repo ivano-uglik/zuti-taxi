@@ -1,4 +1,4 @@
-import React from "react";
+import Home from "./Home";
 import Logo from "./assets/images/Logo.png";
 import HRV from "./assets/images/HRV.png";
 import ENG from "./assets/images/ENG.png";
@@ -16,28 +16,35 @@ import ViberButton from "./assets/images/ViberButton.png";
 import FacebookInvert from "./assets/images/FacebookInvert.png";
 import leftArrow from "./assets/images/LeftArrow.png";
 import rightArrow from "./assets/images/RightArrow.png";
+import taxi from "./assets/images/taxi.svg";
+import DemoCarousel from "./DemoCarousel";
+import Phone1 from "./assets/images/Phone.svg";
+import WhatsApp1 from "./assets/images/WhatsApp.svg";
+import Facebook1 from "./assets/images/Facebook.svg";
 const HomeEn = () => {
   return (
     <div>
-      {/* NUMBER NAVBAR */}
-      <div className="sticky top-0 z-10">
-        <div className="flex justify-center bg-taxiBlack py-2">
-          <div className="flex justify-between ">
-            <div>
-              <img src={Phone} className="w-8 pr-2" />
+      {/* NUMBER NAVBAR, 5vh */}
+      <div className="sticky top-0 z-50">
+        <div className="flex justify-center bg-taxiBlack h-[5vh] items-center">
+          <a href="tel:+385992302000">
+            <div className="flex justify-between ">
+              <div>
+                <img src={Phone} className="w-8 pr-2" />
+              </div>
+              <h1 className="text-taxiYellow font-bold pr-2">
+                (+385) 099 230 2000
+              </h1>
+              <div>
+                <img src={Phone} className="w-8 pr-2" />
+              </div>
             </div>
-            <h1 className="text-taxiYellow font-bold pr-2">
-              (+385) 099 230 2000
-            </h1>
-            <div>
-              <img src={Phone} className="w-8 pr-2" />
-            </div>
-          </div>
+          </a>
         </div>
       </div>
       {/* NAVBAR */}
-      <div className="bg-taxiYellow py-5 md:py-7" id="navbar">
-        <div className="container flex items-center justify-center md:justify-between md:mx-auto ">
+      <div className="bg-taxiYellow h-[10vh] flex items-center" id="navbar">
+        <div className="flex items-center justify-center md:justify-around md:mx-auto w-full ">
           <a href="#">
             <img src={Logo} alt="logo" className="w-36" />
           </a>
@@ -50,7 +57,7 @@ const HomeEn = () => {
               duration={500}
               className="pr-8 text-lg"
             >
-              <button>Home</button>
+              <button>Home </button>
             </Link1>
             <Link1
               to="cjenik"
@@ -73,14 +80,14 @@ const HomeEn = () => {
               <button>Contact Us</button>
             </Link1>
           </div>
-          <div className="hidden w-full md:flex md:flex-row md:w-auto relative">
+          <div className="hidden w-full md:flex md:flex-row md:w-auto relative z-10">
             <div
               onClick={() => {
                 document.getElementById("dropdown").classList.toggle("hidden");
               }}
             >
-              <div className="flex justify-around cursor-pointer w-full gap-2">
-                <img src={ENG} alt="" className="w-6 h-6" />
+              <div className="flex justify-around items-center cursor-pointer w-full gap-2">
+                <img src={ENG} alt="" className="w-7 h-7" />
                 <span className="">EN</span>
                 <span>&#9660;</span>
 
@@ -90,18 +97,13 @@ const HomeEn = () => {
                 >
                   <div className="bg-black rounded-lg w-[4.7rem] text-taxiYellow py-1 text-end">
                     <Link to="/hr">
-                      <div
-                        className="flex flex-row justify-between items-center py-2 px-1 hover:bg-taxiYellow hover:text-black"
-                        onClick={() => {}}
-                      >
+                      <div className="flex flex-row justify-between items-center py-2 px-1 hover:bg-taxiYellow hover:text-black">
                         <img src={HRV} className="w-7 h-7" />
                         <span>HR</span>
                       </div>
                     </Link>
-                    <div
-                      className="flex flex-row justify-between items-center py-2 px-1 hover:bg-taxiYellow hover:text-black"
-                      onClick={() => {}}
-                    >
+
+                    <div className="flex flex-row justify-between items-center py-2 px-1 hover:bg-taxiYellow hover:text-black">
                       <img src={ENG} className="w-7 h-6" />
                       <span>EN</span>
                     </div>
@@ -114,67 +116,74 @@ const HomeEn = () => {
       </div>
       {/* IMG TEMP  */}
       <div className="w-full h-8 blackAndYellow"></div>
-      {/* NASLOVNA */}
-      <div className="overflow-hidden taxiTEMP">
-        <div className="flex flex-col w-screen h-[82vh] justify-around py-36 md:py-auto md:justify-center md:gap-24">
-          <div className="flex items-center justify-center">
-            <div className="flex">
-              <div className="md:p-8 bg-taxiBlack text-taxiYellow mx-8 md:mx-auto md:px-auto  text-2xl md:text-4xl font-semibold rounded-xl text-center">
-                <h1 className>
-                  The Best Taxi Service in Vinkovci and the Surrounding Area!
-                </h1>
-              </div>
+      {/* NASLOVNA / CAROUSEL */}
+      <DemoCarousel />
+      {/* NASLOVNICA */}
+      <div className="min-h-[50vh] flex flex-col justify-center items-center w-full h-full halfInvert">
+        <div className="flex flex-col md:flex-row items-center h-full text-center">
+          <div className="flex flex-col justify-center gap-4 md:gap-16 items-center h-[50vh] md:h-full w-full p-2 md:p-8">
+            <h1 className="font-bold text-2xl xl:text-5xl pt-8 md:pt-auto">
+              The best Taxi in Vinkovci and the Surrounding Area!
+            </h1>
+            <p className="text-justify px-8 lg:px-32">
+              Welcome to the "Žuti Taxi Vinkovci" website, the leading taxi
+              service in Vinkovci. Our team of professional drivers is at your
+              disposal 24/7 to provide you with safe and comfortable
+              transportation at the most affordable prices. With our modern
+              fleet of vehicles and easy online booking, we guarantee you a
+              high-quality and reliable service that will meet your needs.
+            </p>
+            <div className="font-extrabold text-3xl lg:text-[3.5rem] w-auto p-4 rounded-xl bg-taxiBlack text-white ">
+              <a href="tel+385992302000">
+                <h1 className="">099 230 2000</h1>
+              </a>
             </div>
           </div>
-          <div className="flex flex-row justify-center md:justify-between px-4 items-center">
-            <img src={leftArrow} className="h-4 md:h-16 hidden md:block" />
-            <a href="tel:+385992302000">
-              <h1 className="text-3xl md:text-7xl font-extrabold bg-taxiBlack p-4 md:p-12 rounded-xl text-taxiYellow">
-                (+385) 099 230 2000
-              </h1>
-            </a>
-            <img src={rightArrow} className="h-4 md:h-16 hidden md:block" />
+          <div className="flex justify-center items-center h-[50vh] md:h-full w-full">
+            <img src={taxi} alt="taksi ikona" className="w-[40rem] p-16" />
           </div>
         </div>
       </div>
+      <div className="w-full h-8 blackAndYellowStatic"></div>
       {/* CJENIK I KONTAKT  */}
-      <div className="overflow-x-hidden" id="kontakt">
+      <div id="kontakt">
         {/* CJENIK & KONTAKT HIDDEN MOBILE*/}
         <div className="block md:hidden">
           {/* CJENIK HIDDEN */}
-          <div id="kontakt">
+          <div id="kontakt w-full">
             <div>
-              <div className=" md:w-screen md:h-screen flex justify-center flex-col w-full h-full bg-taxiBlack pb-8">
+              <div className=" md:w-full md:h-screen flex justify-center flex-col w-full h-full bg-taxiBlack pb-8">
                 <div className="flex md:hidden justify-center py-8 font-bold text-3xl md:text-4xl text-taxiYellow">
-                  <h1>Cjenik</h1>
+                  <h1>Price List</h1>
                 </div>
                 <section className="flex md:hidden flex-col md:flex-row justify-center text-center md:gap-x-16 mx-8 md:mx-auto">
                   <article className="glassmorphism p-8 md:basis-1/3 h-full mb-12 md:mb-auto">
                     <ul>
-                      <li className="text-3xl font-bold">Gradska vožnja</li>
+                      <li className="text-3xl font-bold">In Vinkovci</li>
                       <li className="text-2xl">00-24h</li>
-                      <li className="text-lg">Maks. 4 osobe</li>
+                      <li className="text-lg">Max. 4 people</li>
                       <li className="text-lg">3km</li>
                       <li className="text-4xl py-2 font-bold">
                         3,00 &euro; / 22,60kn
                       </li>
                       <hr className="border-1 border-black mb-4" />
                       <div className="flex flex-row w-full pb-2 justify-between">
-                        <li className="text-md">Vožnja po km</li>
+                        <li className="text-md">Per kilometer</li>
                         <li className="text-md">0,80 &euro; / 6,02kn</li>
                       </div>
                       <div className="flex flex-row w-full pb-2 justify-between">
-                        <li className="text-md">Čekanje po satu</li>
+                        <li className="text-md">{"Waiting (per hour)"}</li>
                         <li className="text-md">8,00 &euro; / 60,27kn</li>
                       </div>
                       <hr className="border-1 border-black mt-4" />
                       <div className="py-2 ">
                         <li className="font-light opacity-80">
-                          Vožnja unutar Vinkovaca obavlja se po cjeniku usluga.
+                          Rides in Vinkovci are carried out according to the
+                          price list.
                         </li>
                         <li className="font-light opacity-80">
-                          Taxi sat se uključuje po dolasku pred adresu
-                          korisnika.
+                          A Taximeter is turned on upon arriving at the client's
+                          location.
                         </li>
                       </div>
                     </ul>
@@ -182,7 +191,7 @@ const HomeEn = () => {
                   <article className="glassmorphism p-8 md:basis-1/3 h-full">
                     <ul>
                       <li className="text-3xl font-bold pb-4">
-                        Izvan Vinkovaca
+                        Outside of Vinkovci
                       </li>
                       <div className="flex flex-row w-full pb-2 justify-between">
                         <li className="text-lg md:text-2xl text-start">
@@ -211,11 +220,12 @@ const HomeEn = () => {
                       <hr className="border-1 border-black mt-4" />
                       <div className="pt-4 font-light">
                         <li>
-                          Vožnje izvan Vinkovaca se vode po fiksnom cjeniku.
+                          Rides outside of Vinkovci are set by a fixed price
+                          list.
                         </li>
                         <li>
                           <a href="" className="underline underline-offset-4">
-                            Za punu listu gradova i sela, kliknite ovdje.
+                            You can find the price list here.
                           </a>
                         </li>
                       </div>
@@ -228,9 +238,9 @@ const HomeEn = () => {
           {/* // KONTAKT HIDDEN*/}
           <div className="bg-taxiYellow">
             <div className="flex md:hidden justify-center pt-8 pb-12 font-bold text-3xl md:text-4xl text-taxiBlack">
-              <h1>Kontakt</h1>
+              <h1>Contact Us</h1>
             </div>
-            <section className="flex md:hidden flex-col md:flex-row md:h-96 justify-center text-center md:gap-x-16 mx-8 md:mx-auto mb-12 text-taxiYellow">
+            <section className="flex md:hidden flex-col md:flex-row md:h-96 justify-center text-center md:gap-x-16 mx-8 md:mx-auto text-taxiYellow">
               <article className="bg-taxiBlack backdrop-blur-none rounded-[16px] p-8 md:basis-1/4 mb-12 md:mb-auto h-full">
                 <div className="flex justify-center">
                   <span className="p-8 absolute glassmorphismBlack rounded-full top-[-2rem]"></span>
@@ -238,16 +248,19 @@ const HomeEn = () => {
                 </div>
                 <div className="flex flex-col pt-6 h-full gap-y-8">
                   <h1 className="text-lg">
-                    Posjetite našu Facebook stranicu ili pošaljite poruku na naš
-                    Messenger:{" "}
+                    Find us on Facebook or send us a message on Messenger:
                   </h1>
-                  <a
-                    href="https://web.facebook.com/people/%C5%BDuti-Taxi-Vinkovci/100057088434942/"
-                    className="underline text-3xl font-semibold"
-                    target={"_blank"}
-                  >
-                    Žuti Taxi Vinkovci
-                  </a>
+                  <div className="flex justify-center">
+                    <iframe
+                      src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100057088434942&tabs=timeline&width=200&height=100&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                      width="200"
+                      height="100"
+                      frameborder="0"
+                      allowfullscreen="true"
+                      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                      className="border-none overflow-hidden"
+                    ></iframe>
+                  </div>
                 </div>
               </article>
               <article className="bg-taxiBlack backdrop-blur-none rounded-2xl p-8 md:basis-1/4 mb-12 md:mb-auto h-full">
@@ -258,7 +271,7 @@ const HomeEn = () => {
                 <div className="flex flex-col justify-around h-full gap-y-8">
                   <div className="">
                     <h2 className="text-lg">
-                      Nazovite ili pošaljite SMS poruku na:
+                      Call us or send us an SMS message on:
                     </h2>
                     <h1 className="text-4xl font-bold py-8">
                       (+385) 099 230 2000
@@ -266,153 +279,162 @@ const HomeEn = () => {
                     <h1>SMS | Viber | WhatsApp</h1>
                   </div>
                   <p className="text-xs font-light opacity-80">
-                    *Ovisno o Vašem mobilnom operateru, standardne tarife poziva
-                    i SMS-a se primijenjuju.
+                    *Depending on your mobile operator, standard call and SMS
+                    rates may apply.
                   </p>
                 </div>
               </article>
             </section>
           </div>
         </div>
+
         {/* CJENIK & KONTAKT HIDDEN DESKTOP*/}
-        <div className="hidden md:block" id="cjenik">
-          <div className="w-screen h-screen flex flex-row basis-1/2">
-            <section className="bg-taxiBlack w-full h-full">
-              <div className="text-taxiYellow font-bold text-4xl flex justify-center py-16">
-                <h1>Cjenik</h1>
-              </div>
-              <div className="grid place-items-center">
-                <div className="h-full w-[80%] bg-taxiYellow px-32 pt-8 text-taxiBlack rounded-lg">
-                  <div className="flex items-center flex-col">
-                    <h1 className="font-bold text-3xl ">Gradska Vožnja</h1>
-                    <h3 className="text-xl">00-24h</h3>
-                    <h3 className="text-xl">Maks. 4 osobe</h3>
-                    <h3 className="text-xl">3km</h3>
-                    <h1 className="font-bold text-4xl py-4">
-                      3,00 &euro; / 22,60kn
-                    </h1>
-                    <hr className="border-1 border-taxiBlack w-full py-2" />
-                    <div className="flex flex-row justify-between w-full xl:px-4">
-                      <h3 className="">Vožnja po km</h3>
-                      <h3 className="">0,80 &euro; / 6,02kn</h3>
-                    </div>
-                    <div className="flex flex-row justify-between w-full xl:px-4 pb-4">
-                      <h3>Čekanje po satu</h3>
-                      <h3>8,00 &euro; / 60,27kn</h3>
-                    </div>
-                    <hr className="border-1 border-taxiBlack w-full" />
-                    <span className="text-center opacity-50 pt-4">
-                      Vožnja unutar Vinkovaca obavlja se po cjeniku usluga. Taxi
-                      sat se uključuje po dolasku pred adresu korisnika.
-                    </span>
+        <div
+          className="hidden md:flex items-center justify-center half min-h-screen text-center w-full"
+          id="cjenik"
+        >
+          <div className="flex flex-row justify-around h-full">
+            {/* CJENIK */}
+            <div className="bg-taxiYellow text-taxiBlack rounded-lg w-[40%] flex flex-col lg:px-16 xl:px-[6vw] lg:py-8 xl:py-[8vh] gap-8">
+              <div className="flex items-center flex-col">
+                <h1 className="font-bold text-3xl pb-4">In Vinkovci</h1>
+                <hr className="border-1 border-taxiBlack w-full pb-4" />
+                <h3 className="text-xl">00-24h</h3>
+                <h3 className="text-xl">Maks. 4 osobe</h3>
+                <h3 className="text-xl">3km</h3>
+                <h1 className="font-bold text-4xl py-4">
+                  3,00 &euro; / 22,60kn
+                </h1>
+                <hr className="border-1 border-taxiBlack w-full" />
+                <div className="w-full pt-4 xl:px-4">
+                  <div className="flex flex-row justify-between">
+                    <h3>Per kilometer</h3>
+                    <h3>0,80 &euro; / 6,02kn</h3>
                   </div>
-                  <div className="flex items-center flex-col pt-16">
-                    <h1 className="font-bold text-3xl pb-4">Izvan Vinkovaca</h1>
-                    <hr className="border-1 border-taxiBlack w-full py-2" />
-                    <div className="flex flex-row justify-between w-full xl:px-4">
-                      <h3 className="">Zagreb</h3>
-                      <h3 className="">240,00 &euro; / 1808,28kn</h3>
-                    </div>
-                    <div className="flex flex-row justify-between w-full xl:px-4">
-                      <h3 className="">Vukovar</h3>
-                      <h3 className="">16,00 &euro; / 120,55kn</h3>
-                    </div>
-                    <div className="flex flex-row justify-between w-full xl:px-4 pb-4">
-                      <h3>Vukovar</h3>
-                      <h3>16,00 &euro; / 120,55kn</h3>
-                    </div>
-                    <hr className="border-1 border-taxiBlack w-full" />
-                    <span className="text-center opacity-50 pt-4 pb-8">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Blanditiis saepe unde delectus explicabo quae, sit quo.
-                    </span>
+                  <div className="flex flex-row justify-between">
+                    <h3>Waiting (per hour)</h3>
+                    <h3>8,00 &euro; / 60,27kn</h3>
                   </div>
                 </div>
+                <span className="opacity-50 pt-4">
+                  Rides in Vinkovci are carried out according to the price list.
+                </span>
+                <span className="opacity-50 pt-4">
+                  A Taximeter is turned on upon arriving at the client's
+                  location.
+                </span>
               </div>
-            </section>
-            <section className="bg-taxiYellow w-full h-full">
-              <div className="text-taxiBlack font-bold text-4xl flex justify-center py-16">
-                <h1>Kontakt</h1>
-              </div>
-              <div className="grid place-items-center text-center h-[43rem]">
-                <div className="h-full w-[80%] bg-taxiBlack px-32 pt-8 text-taxiYellow rounded-lg">
-                  <div className="flex items-center flex-col py-8">
-                    <div className="flex flex-row gap-4">
-                      <div className="flex justify-center">
-                        <div className="bg-taxiYellow rounded-full h-full">
-                          <img src={PhoneInvert} className="w-8 m-4" />
-                        </div>
-                      </div>
-                      <div className="flex justify-center">
-                        <div className="bg-taxiYellow rounded-full h-full">
-                          <img src={WhatsappInvert} className="w-8 m-4" />
-                        </div>
-                      </div>
-                      <div className="flex justify-center">
-                        <div className="bg-taxiYellow rounded-full h-full">
-                          <img src={ViberButton} className="w-8 m-4" />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="pt-8">
-                      <h1 className="text-xl">
-                        Nazovite ili pošaljite SMS poruku na:{" "}
-                      </h1>
-                      <h1 className="font-bold text-4xl py-4">
-                        (+385) 099 230 2000
-                      </h1>
-                      <h1 className="text-lg">SMS | Viber | Whatsapp</h1>
-                    </div>
-                    <div className="bg-taxiYellow rounded-full h-full mt-8">
-                      <img src={FacebookInvert} className="w-8 m-4" />
-                    </div>
-                    <div>
-                      <h1 className="mt-8 text-xl">
-                        Posjetite našu Facebook stranicu ili pošaljite poruku na
-                        naš Messenger:
-                      </h1>
-                      <h1 className="py-4 text-4xl font-bold underline">
-                        Žuti Taxi Vinkovci
-                      </h1>
-                    </div>
+              <div className="flex items-center flex-col">
+                <h1 className="font-bold text-3xl pb-4">Outside of Vinkovci</h1>
+                <hr className="border-1 border-taxiBlack w-full" />
+                <div className="w-full xl:px-4 pt-4">
+                  <div className="flex flex-row justify-between ">
+                    <h3>Zagreb</h3>
+                    <h3>240,00 &euro; / 1808,28kn</h3>
+                  </div>
+                  <div className="flex flex-row justify-between">
+                    <h3>Vukovar</h3>
+                    <h3>16,00 &euro; / 120,55kn</h3>
+                  </div>
+                  <div className="flex flex-row justify-between">
+                    <h3>Osijek</h3>
+                    <h3>32,00 &euro; / 241,10kn</h3>
                   </div>
                 </div>
+                <span className="opacity-50 pt-4">
+                  Rides outside of Vinkovci are set by a fixed price list.
+                  <a href="" className="underline underline-offset-2">
+                    You can find the price list here.
+                  </a>
+                </span>
+                <span className="opacity-50">
+                  For all other locations, please contact us.
+                </span>
               </div>
-            </section>
-          </div>
-        </div>
-      </div>
-      {/* FOOTER */}
-      <div className="overflow-hidden">
-        <footer className="text-xs md:text-base flex w-full flex-col bg-gray-900 text-taxiYellow justify-around font-light py-2 md:py-4 lg:px-36">
-          <div className="flex flex-row gap-4 md:gap-8 justify-center py-4">
-            <div className="flex flex-row gap-4 md:gap-8">
-              <img
-                src={PlavaVinkovacka}
-                alt="Plava Vinkovačka"
-                className="w-16 h-16 md:w-32 md:h-32"
-              />
-              <img
-                src={OptikaMarko}
-                alt="Plava Vinkovačka"
-                className="w-16 h-16 md:w-32 md:h-32"
-              />
+            </div>
+            {/* KONTAKT */}
+            <div className="bg-taxiBlack text-taxiYellow rounded-lg w-[40%] flex flex-col justify-center lg:px-16 xl:px-[6vw] lg:py-8 xl:py-[10vh]">
+              <div className="flex flex-col items-center pb-8">
+                <div className="flex flex-row gap-8">
+                  <a href="tel:+385992302000">
+                    <img src={Phone1} alt="link na poziv" className="w-16" />
+                  </a>
+                  <a href="https://wa.me/+385992302000" target="__blank">
+                    <img
+                      src={WhatsApp1}
+                      alt="link na whatsapp"
+                      className="w-16"
+                    />
+                  </a>
+                </div>
+                <h1 className="text-xl pt-8">
+                  Call Us or send an SMS message on:
+                </h1>
+                <h1 className="font-bold text-4xl py-4">(+385) 099 230 2000</h1>
+                <h1 className="text-lg">SMS | Viber | Whatsapp</h1>
+              </div>
+
+              <div>
+                <a
+                  href="https://www.facebook.com/profile.php?id=100057088434942"
+                  className="flex justify-center"
+                >
+                  <img
+                    src={Facebook1}
+                    alt="link na facebook"
+                    className="w-16"
+                  />
+                </a>
+                <h1 className="text-xl pt-8">
+                  Find us on Facebook or send us a message on Messenger:
+                </h1>
+                <div className="flex justify-center pt-4">
+                  <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100057088434942&tabs=timeline&width=500&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="500"
+                    height="130"
+                    frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                    className="border-none overflow-hidden"
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="flex justify-center flex-col text-center items-center py-4 text-base">
-            <h1>&#169; 2023 - Žuti Taxi Vinkovci. Sva prava pridržana.</h1>
-            <h1>
-              Izrada web stranice - Ivano Uglik&nbsp;|&nbsp;
-              <a
-                href="https://github.com/ivano-uglik/zuti-taxi"
-                className="underline"
-                target="_blank"
-              >
-                GitHub
-              </a>
-            </h1>
-          </div>
-        </footer>
+        </div>
+        {/* FOOTER */}
+        <div className="overflow-hidden">
+          <footer className="text-xs md:text-base flex w-full flex-col bg-gray-900 text-taxiYellow justify-around font-light py-2 md:py-4 lg:px-36">
+            <div className="flex flex-row gap-4 md:gap-8 justify-center py-4">
+              <div className="flex flex-row gap-4 md:gap-8">
+                <img
+                  src={PlavaVinkovacka}
+                  alt="Plava Vinkovačka"
+                  className="w-16 h-16 md:w-32 md:h-32"
+                />
+                <img
+                  src={OptikaMarko}
+                  alt="Plava Vinkovačka"
+                  className="w-16 h-16 md:w-32 md:h-32"
+                />
+              </div>
+            </div>
+            <div className="flex justify-center flex-col text-center items-center py-4 text-xs md:text-base px-2">
+              <h1>&#169; 2023 - Žuti Taxi Vinkovci. All Rights Reserved.</h1>
+              <h1>
+                Website made by Ivano Uglik.&nbsp;|&nbsp;
+                <a
+                  href="https://github.com/ivano-uglik/zuti-taxi"
+                  className="underline"
+                  target="_blank"
+                >
+                  GitHub
+                </a>
+              </h1>
+            </div>
+          </footer>
+        </div>
       </div>
     </div>
   );
