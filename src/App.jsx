@@ -8,6 +8,7 @@ import React, { useState } from "react";
 import Home from "./Home";
 import HomeEn from "./HomeEn";
 import { Routes, Route } from "react-router-dom";
+import CKtemp from "./pages/CKtemp";
 const App = () => {
   return (
     <div>

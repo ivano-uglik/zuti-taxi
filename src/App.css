@@ -36,7 +36,9 @@
   background-size: contain;
   animation: bannermove 15s linear infinite;
 }
-
+.half {
+  background: linear-gradient(to left, #fdbe0e 50vw, #241e1e 50vw);
+}
 @keyframes bannermove {
   0% {
     background-position: 0;

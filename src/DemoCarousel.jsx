@@ -21,7 +21,7 @@ class DemoCarousel extends Component {
         interval={5000}
         swipeable={false}
       >
-        <div className="h-[82vh] ">
+        <div className="h-[82vh] object-cover">
           <img
             src={Taxi}
             className="w-auto h-full object-cover object-center"
