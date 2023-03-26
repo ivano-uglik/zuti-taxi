@@ -3,6 +3,10 @@
   font-family: Inter, sans-serif;
 }
 
+body {
+  background-color: #241e1e;
+}
+
 .glassmorphism {
   /* From https://css.glass */
   /* background: rgba(253, 190, 14, 0.5); */
