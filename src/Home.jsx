@@ -44,12 +44,49 @@ const Home = () => {
         </div>
       </div>
       {/* NAVBAR */}
-      <div className="bg-taxiYellow h-[10vh] flex items-center" id="navbar">
-        <div className="flex items-center justify-center md:justify-around md:mx-auto w-full ">
-          <a href="#">
+      <div className="bg-taxiYellow min-h-[10vh] flex items-center" id="navbar">
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-around md:mx-auto w-full h-full">
+          <a href="#" className="order-1 p-4">
             <img src={Logo} alt="logo" className="w-36" />
           </a>
-          <div className="hidden w-full md:block md:w-auto">
+          <div className="h-full w-full md:h-auto md:w-auto order-2 md:order-3 pb-4 md:pb-0 flex flex-row items-center justify-center">
+            <div className="flex md:flex-row md:w-auto justify-center relative z-10 ">
+              <div
+                onClick={() => {
+                  document
+                    .getElementById("dropdown")
+                    .classList.toggle("hidden");
+                }}
+              >
+                <div className="flex justify-around items-center cursor-pointer w-full gap-2">
+                  <img src={HRV} alt="" className="w-7 h-7" />
+                  <span className="">HR</span>
+                  <span>&#9660;</span>
+
+                  <div
+                    className="hidden absolute top-8 cursor-pointer"
+                    id="dropdown"
+                  >
+                    <div className="bg-black rounded-lg w-[4.7rem] text-taxiYellow py-1 text-end">
+                      <Link to="/hr">
+                        <div className="flex flex-row justify-between items-center py-2 px-1 hover:bg-taxiYellow hover:text-black">
+                          <img src={HRV} className="w-7 h-7" />
+                          <span>HR</span>
+                        </div>
+                      </Link>
+                      <Link to="/en">
+                        <div className="flex flex-row justify-between items-center py-2 px-1 hover:bg-taxiYellow hover:text-black">
+                          <img src={ENG} className="w-7 h-6" />
+                          <span>EN</span>
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="hidden w-full md:block md:w-auto md:order-2">
             <Link1
               to="naslovna"
               spy={true}
@@ -80,37 +117,6 @@ const Home = () => {
             >
               <button>Kontakt</button>
             </Link1>
-          </div>
-          <div className="hidden w-full md:flex md:flex-row md:w-auto relative z-10">
-            <div
-              onClick={() => {
-                document.getElementById("dropdown").classList.toggle("hidden");
-              }}
-            >
-              <div className="flex justify-around items-center cursor-pointer w-full gap-2">
-                <img src={HRV} alt="" className="w-7 h-7" />
-                <span className="">HR</span>
-                <span>&#9660;</span>
-
-                <div
-                  className="hidden absolute top-8 cursor-pointer"
-                  id="dropdown"
-                >
-                  <div className="bg-black rounded-lg w-[4.7rem] text-taxiYellow py-1 text-end">
-                    <div className="flex flex-row justify-between items-center py-2 px-1 hover:bg-taxiYellow hover:text-black">
-                      <img src={HRV} className="w-7 h-7" />
-                      <span>HR</span>
-                    </div>
-                    <Link to="/en">
-                      <div className="flex flex-row justify-between items-center py-2 px-1 hover:bg-taxiYellow hover:text-black">
-                        <img src={ENG} className="w-7 h-6" />
-                        <span>EN</span>
-                      </div>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

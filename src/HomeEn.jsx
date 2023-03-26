@@ -43,12 +43,49 @@ const HomeEn = () => {
         </div>
       </div>
       {/* NAVBAR */}
-      <div className="bg-taxiYellow h-[10vh] flex items-center" id="navbar">
-        <div className="flex items-center justify-center md:justify-around md:mx-auto w-full ">
-          <a href="#">
+      <div className="bg-taxiYellow min-h-[10vh] flex items-center" id="navbar">
+        <div className="flex flex-col md:flex-row items-center justify-center md:justify-around md:mx-auto w-full h-full">
+          <a href="#" className="order-1 p-4">
             <img src={Logo} alt="logo" className="w-36" />
           </a>
-          <div className="hidden w-full md:block md:w-auto">
+          <div className="h-full w-full md:h-auto md:w-auto order-2 md:order-3 pb-4 md:pb-0 flex flex-row items-center justify-center">
+            <div className="flex md:flex-row md:w-auto justify-center relative z-10 ">
+              <div
+                onClick={() => {
+                  document
+                    .getElementById("dropdown")
+                    .classList.toggle("hidden");
+                }}
+              >
+                <div className="flex justify-around items-center cursor-pointer w-full gap-2">
+                  <img src={ENG} alt="" className="w-7 h-7" />
+                  <span className="">EN</span>
+                  <span>&#9660;</span>
+
+                  <div
+                    className="hidden absolute top-8 cursor-pointer"
+                    id="dropdown"
+                  >
+                    <div className="bg-black rounded-lg w-[4.7rem] text-taxiYellow py-1 text-end">
+                      <Link to="/hr">
+                        <div className="flex flex-row justify-between items-center py-2 px-1 hover:bg-taxiYellow hover:text-black">
+                          <img src={HRV} className="w-7 h-7" />
+                          <span>HR</span>
+                        </div>
+                      </Link>
+                      <Link to="/en">
+                        <div className="flex flex-row justify-between items-center py-2 px-1 hover:bg-taxiYellow hover:text-black">
+                          <img src={ENG} className="w-7 h-6" />
+                          <span>EN</span>
+                        </div>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="hidden w-full md:block md:w-auto md:order-2">
             <Link1
               to="naslovna"
               spy={true}
@@ -57,7 +94,7 @@ const HomeEn = () => {
               duration={500}
               className="pr-8 text-lg"
             >
-              <button>Home </button>
+              <button>Naslovna </button>
             </Link1>
             <Link1
               to="cjenik"
@@ -67,7 +104,7 @@ const HomeEn = () => {
               duration={500}
               className="pr-8 text-lg"
             >
-              <button>Pricing</button>
+              <button>Cjenik</button>
             </Link1>
             <Link1
               to="kontakt"
@@ -77,40 +114,8 @@ const HomeEn = () => {
               duration={500}
               className="text-lg"
             >
-              <button>Contact Us</button>
+              <button>Kontakt</button>
             </Link1>
-          </div>
-          <div className="hidden w-full md:flex md:flex-row md:w-auto relative z-10">
-            <div
-              onClick={() => {
-                document.getElementById("dropdown").classList.toggle("hidden");
-              }}
-            >
-              <div className="flex justify-around items-center cursor-pointer w-full gap-2">
-                <img src={ENG} alt="" className="w-7 h-7" />
-                <span className="">EN</span>
-                <span>&#9660;</span>
-
-                <div
-                  className="hidden absolute top-8 cursor-pointer"
-                  id="dropdown"
-                >
-                  <div className="bg-black rounded-lg w-[4.7rem] text-taxiYellow py-1 text-end">
-                    <Link to="/hr">
-                      <div className="flex flex-row justify-between items-center py-2 px-1 hover:bg-taxiYellow hover:text-black">
-                        <img src={HRV} className="w-7 h-7" />
-                        <span>HR</span>
-                      </div>
-                    </Link>
-
-                    <div className="flex flex-row justify-between items-center py-2 px-1 hover:bg-taxiYellow hover:text-black">
-                      <img src={ENG} className="w-7 h-6" />
-                      <span>EN</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -119,9 +124,9 @@ const HomeEn = () => {
       {/* NASLOVNA / CAROUSEL */}
       <DemoCarousel />
       {/* NASLOVNICA */}
-      <div className="min-h-[50vh] flex flex-col justify-center items-center w-full h-full halfInvert">
-        <div className="flex flex-col md:flex-row items-center h-full text-center">
-          <div className="flex flex-col justify-center gap-4 md:gap-16 items-center h-[50vh] md:h-full w-full p-2 md:p-8">
+      <div className="min-h-[50vh] flex flex-col justify-center items-center w-full h-full">
+        <div className="flex flex-col md:flex-row items-center h-full text-center bg-taxiYellow">
+          <div className="flex flex-col justify-center gap-4 md:gap-16 items-center h-[50vh] md:h-full w-full p-2 md:p-8 pb-8">
             <h1 className="font-bold text-2xl xl:text-5xl pt-8 md:pt-auto">
               The best Taxi in Vinkovci and the Surrounding Area!
             </h1>
@@ -139,7 +144,7 @@ const HomeEn = () => {
               </a>
             </div>
           </div>
-          <div className="flex justify-center items-center h-[50vh] md:h-full w-full">
+          <div className="flex justify-center items-center h-[50vh] md:h-full w-full bg-taxiBlack">
             <img src={taxi} alt="taksi ikona" className="w-[40rem] p-16" />
           </div>
         </div>
