@@ -1,6 +1,3 @@
 {
-  "rewrites": [
-    { "source": "/hr", "destination": "/Home.jsx" },
-    { "source": "/en", "destination": "/HomeEn.jsx" }
-  ]
+  "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
 }

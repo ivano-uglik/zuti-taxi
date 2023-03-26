@@ -2,7 +2,7 @@
   "name": "zuti.hr",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ivano-uglik.github.io/zuti-taxi",
+  "homepage": "",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
