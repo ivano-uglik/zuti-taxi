@@ -94,7 +94,7 @@ const HomeEn = () => {
               duration={500}
               className="pr-8 text-lg"
             >
-              <button>Naslovna </button>
+              <button>Home</button>
             </Link1>
             <Link1
               to="cjenik"
@@ -104,7 +104,7 @@ const HomeEn = () => {
               duration={500}
               className="pr-8 text-lg"
             >
-              <button>Cjenik</button>
+              <button>Pricing</button>
             </Link1>
             <Link1
               to="kontakt"
@@ -114,7 +114,7 @@ const HomeEn = () => {
               duration={500}
               className="text-lg"
             >
-              <button>Kontakt</button>
+              <button>Contact Us</button>
             </Link1>
           </div>
         </div>
@@ -124,27 +124,33 @@ const HomeEn = () => {
       {/* NASLOVNA / CAROUSEL */}
       <DemoCarousel />
       {/* NASLOVNICA */}
-      <div className="min-h-[50vh] flex flex-col justify-center items-center w-full h-full">
+      <div className="min-h-[50vh] flex flex-col justify-center items-center w-full h-full ">
         <div className="flex flex-col md:flex-row items-center h-full text-center bg-taxiYellow">
-          <div className="flex flex-col justify-center gap-4 md:gap-16 items-center h-[50vh] md:h-full w-full p-2 md:p-8 pb-8">
-            <h1 className="font-bold text-2xl xl:text-5xl pt-8 md:pt-auto">
-              The best Taxi in Vinkovci and the Surrounding Area!
+          <div className="flex flex-col justify-center gap-4 md:gap-16 items-center min-h-[50vh] h-full w-full p-2 md:p-8 pb-8">
+            <h1 className="font-bold text-2xl xl:text-3xl pt-4 md:pt-auto">
+              The Best Taxi Service in Vinkovci and the Surrounding Area!
             </h1>
             <p className="text-justify px-8 lg:px-32">
-              Welcome to the "Žuti Taxi Vinkovci" website, the leading taxi
-              service in Vinkovci. Our team of professional drivers is at your
-              disposal 24/7 to provide you with safe and comfortable
-              transportation at the most affordable prices. With our modern
-              fleet of vehicles and easy online booking, we guarantee you a
-              high-quality and reliable service that will meet your needs.
+              Welcome to the Žuti Taxi Vinkovci ("Yellow Taxi") website, the
+              leading taxi service in Vinkovci.
+              <p>
+                Our team of professional drivers is at your disposal 24/7 to
+                provide you with safe and comfortable transportation at the most
+                affordable prices.
+              </p>
+              <p>
+                With our modern fleet of vehicles and easy online booking, we
+                guarantee you a high-quality and reliable service that will meet
+                your needs.
+              </p>
             </p>
-            <div className="font-extrabold text-3xl lg:text-[3.5rem] w-auto p-8 rounded-xl bg-taxiBlack text-white ">
+            <div className="font-extrabold text-3xl lg:text-[3.5rem] w-auto p-4 rounded-xl bg-taxiBlack text-white">
               <a href="tel:+385992302000">
                 <h1 className="">(+385) 099 230 2000</h1>
               </a>
             </div>
           </div>
-          <div className="flex justify-center items-center h-[50vh] md:h-full w-full bg-taxiBlack">
+          <div className="flex justify-center items-center min-h-[50vh] md:h-full w-full bg-taxiBlack">
             <img src={taxi} alt="taksi ikona" className="w-[40rem] p-16" />
           </div>
         </div>
