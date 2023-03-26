@@ -133,9 +133,9 @@ const HomeEn = () => {
               fleet of vehicles and easy online booking, we guarantee you a
               high-quality and reliable service that will meet your needs.
             </p>
-            <div className="font-extrabold text-3xl lg:text-[3.5rem] w-auto p-4 rounded-xl bg-taxiBlack text-white ">
-              <a href="tel+385992302000">
-                <h1 className="">099 230 2000</h1>
+            <div className="font-extrabold text-3xl lg:text-[3.5rem] w-auto p-8 rounded-xl bg-taxiBlack text-white ">
+              <a href="tel:+385992302000">
+                <h1 className="">(+385) 099 230 2000</h1>
               </a>
             </div>
           </div>

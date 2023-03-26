@@ -119,28 +119,33 @@ const Home = () => {
       {/* NASLOVNA / CAROUSEL */}
       <DemoCarousel />
       {/* NASLOVNICA */}
-      <div className="min-h-[50vh] flex flex-col justify-center items-center w-full h-full halfInvert">
-        <div className="flex flex-col md:flex-row items-center h-full text-center">
-          <div className="flex flex-col justify-center gap-4 md:gap-16 items-center h-[50vh] md:h-full w-full p-2 md:p-8">
-            <h1 className="font-bold text-2xl xl:text-5xl pt-8 md:pt-auto">
+      <div className="min-h-[50vh] flex flex-col justify-center items-center w-full h-full ">
+        <div className="flex flex-col md:flex-row items-center h-full text-center bg-taxiYellow">
+          <div className="flex flex-col justify-center gap-4 md:gap-16 items-center min-h-[50vh] h-full w-full p-2 md:p-8 pb-8">
+            <h1 className="font-bold text-2xl xl:text-5xl pt-4 md:pt-auto">
               Najbolji Taxi u Vinkovcima i okolici!
             </h1>
             <p className="text-justify px-8 lg:px-32">
               Dobrodošli na stranicu "Žuti Taxi Vinkovci", vodeće taxi službe u
-              Vinkovcima i okolici. Naš tim profesionalnih vozača stoji Vam na
-              raspolaganju 24 sata dnevno, 7 dana u tjednu, kako bi Vam pružio
-              siguran i ugodan prijevoz po najpovoljnijim cijenama. S našom
-              modernom voznom flotom i jednostavnom online rezervacijom,
-              uvjeravamo Vas u kvalitetnu i pouzdanu uslugu koja će udovoljiti
-              Vašim potrebama.
+              Vinkovcima i okolici.{" "}
+              <p>
+                Naš tim profesionalnih vozača stoji Vam na raspolaganju 24 sata
+                dnevno, 7 dana u tjednu, kako bi Vam pružio siguran i ugodan
+                prijevoz po najpovoljnijim cijenama.{" "}
+              </p>
+              <p>
+                S našom modernom voznom flotom i jednostavnom online
+                rezervacijom, uvjeravamo Vas u kvalitetnu i pouzdanu uslugu koja
+                će udovoljiti Vašim potrebama.
+              </p>
             </p>
-            <div className="font-extrabold text-3xl lg:text-[3.5rem] w-auto p-4 rounded-xl bg-taxiBlack text-white ">
-              <a href="tel+385992302000">
+            <div className="font-extrabold text-3xl lg:text-[3.5rem] w-auto p-4 rounded-xl bg-taxiBlack text-white">
+              <a href="tel:+385992302000">
                 <h1 className="">099 230 2000</h1>
               </a>
             </div>
           </div>
-          <div className="flex justify-center items-center h-[50vh] md:h-full w-full">
+          <div className="flex justify-center items-center min-h-[50vh] md:h-full w-full bg-taxiBlack">
             <img src={taxi} alt="taksi ikona" className="w-[40rem] p-16" />
           </div>
         </div>
