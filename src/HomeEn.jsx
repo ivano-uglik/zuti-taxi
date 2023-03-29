@@ -94,7 +94,7 @@ const HomeEn = () => {
               duration={500}
               className="pr-8 text-lg"
             >
-              <button>Home</button>
+              <button className="text-xl">Home</button>
             </Link1>
             <Link1
               to="cjenik"
@@ -235,9 +235,11 @@ const HomeEn = () => {
                           list.
                         </li>
                         <li>
-                          <a href="" className="underline underline-offset-4">
-                            You can find the price list here.
-                          </a>
+                          <Link to="/en/pricelist">
+                            <a href="" className="underline underline-offset-4">
+                              You can find the price list here.
+                            </a>
+                          </Link>
                         </li>
                       </div>
                     </ul>
@@ -354,9 +356,11 @@ const HomeEn = () => {
                 </div>
                 <span className="opacity-50 pt-4">
                   Rides outside of Vinkovci are set by a fixed price list.
-                  <a href="" className="underline underline-offset-2">
-                    You can find the price list here.
-                  </a>
+                  <Link to="/en/pricelist">
+                    <a href="" className="underline underline-offset-4">
+                      You can find the price list here.
+                    </a>
+                  </Link>
                 </span>
                 <span className="opacity-50">
                   For all other locations, please contact us.

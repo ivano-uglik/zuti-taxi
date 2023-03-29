@@ -21,6 +21,7 @@ import DemoCarousel from "./DemoCarousel";
 import Phone1 from "./assets/images/Phone.svg";
 import WhatsApp1 from "./assets/images/WhatsApp.svg";
 import Facebook1 from "./assets/images/Facebook.svg";
+import Cjenik from "./Cjenik";
 
 const Home = () => {
   // var Carousel = require("react-responsive-carousel").Carousel;
@@ -95,7 +96,7 @@ const Home = () => {
               duration={500}
               className="pr-8 text-lg"
             >
-              <button>Naslovna </button>
+              <button className="text-xl">Naslovna </button>
             </Link1>
             <Link1
               to="cjenik"
@@ -105,7 +106,7 @@ const Home = () => {
               duration={500}
               className="pr-8 text-lg"
             >
-              <button>Cjenik</button>
+              <button className="text-xl">Cjenik</button>
             </Link1>
             <Link1
               to="kontakt"
@@ -115,7 +116,7 @@ const Home = () => {
               duration={500}
               className="text-lg"
             >
-              <button>Kontakt</button>
+              <button className="text-xl">Kontakt</button>
             </Link1>
           </div>
         </div>
@@ -234,9 +235,11 @@ const Home = () => {
                           Vožnje izvan Vinkovaca se vode po fiksnom cjeniku.
                         </li>
                         <li>
-                          <a href="" className="underline underline-offset-4">
-                            Za punu listu gradova i sela, kliknite ovdje.
-                          </a>
+                          <Link to="/hr/cjenik">
+                            <span className="underline underline-offset-4 opacity-100">
+                              Za punu listu gradova i sela, kliknite ovdje.
+                            </span>
+                          </Link>
                         </li>
                       </div>
                     </ul>
@@ -357,9 +360,11 @@ const Home = () => {
                 <span className="opacity-50 pt-4">
                   Vožnja u određene gradove i sela izvan Vinkovaca obavlja se po
                   zasebnom cjeniku.{" "}
-                  <a href="" className="underline underline-offset-2">
-                    Cjenik sa listom mjesta možete pronaći ovdje.
-                  </a>
+                  <Link to="/hr/cjenik">
+                    <span className="underline underline-offset-4">
+                      Za punu listu gradova i sela, kliknite ovdje.
+                    </span>
+                  </Link>
                 </span>
                 <span className="opacity-50">
                   Za sva ostala mjesta molimo da nas nazovete.

@@ -29,8 +29,10 @@ import DemoCarousel from "./DemoCarousel";
 import Phone1 from "./assets/images/Phone.svg";
 import WhatsApp1 from "./assets/images/WhatsApp.svg";
 import Facebook1 from "./assets/images/Facebook.svg";
+import CjenikEN from "./CjenikEN";
 
 import { Routes, Route } from "react-router-dom";
+import Cjenik from "./Cjenik";
 const App = () => {
   return (
     <div>
@@ -38,6 +40,8 @@ const App = () => {
         <Route index element={<Home />}></Route>
         <Route path="/en" element={<HomeEn />} />
         <Route path="/hr" element={<Home />} />
+        <Route path="/hr/cjenik" element={<Cjenik />} />
+        <Route path="/en/pricelist" element={<CjenikEN />} />
         <Route path="*" element={<Home />} />
       </Routes>
 
