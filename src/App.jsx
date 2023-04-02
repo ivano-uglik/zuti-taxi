@@ -30,9 +30,9 @@ import Phone1 from "./assets/images/Phone.svg";
 import WhatsApp1 from "./assets/images/WhatsApp.svg";
 import Facebook1 from "./assets/images/Facebook.svg";
 import CjenikEN from "./CjenikEN";
-
 import { Routes, Route } from "react-router-dom";
 import Cjenik from "./Cjenik";
+
 const App = () => {
   return (
     <div>
@@ -43,14 +43,8 @@ const App = () => {
         <Route path="/hr/cjenik" element={<Cjenik />} />
         <Route path="/en/pricelist" element={<CjenikEN />} />
         <Route path="*" element={<Home />} />
+        <Route path="en/*" element={<HomeEn />} />
       </Routes>
-
-      {/* <NumberNavbar />
-      <Navbar />
-      <ImgTemp />
-      <Naslovna />
-      <CjenikKontakt />
-      <Footer /> */}
     </div>
   );
 };
