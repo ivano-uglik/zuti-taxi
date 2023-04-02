@@ -22,6 +22,7 @@ import Phone1 from "./assets/images/Phone.svg";
 import WhatsApp1 from "./assets/images/WhatsApp.svg";
 import Facebook1 from "./assets/images/Facebook.svg";
 import Cjenik from "./Cjenik";
+import { scrollToTop } from "./ScrollToTop";
 
 const Home = () => {
   // var Carousel = require("react-responsive-carousel").Carousel;
@@ -235,7 +236,7 @@ const Home = () => {
                           Vožnje izvan Vinkovaca se vode po fiksnom cjeniku.
                         </li>
                         <li>
-                          <Link to="/hr/cjenik">
+                          <Link to="/hr/cjenik" onClick={scrollToTop}>
                             <span className="underline underline-offset-4 opacity-100">
                               Za punu listu gradova i sela, kliknite ovdje.
                             </span>
@@ -360,7 +361,7 @@ const Home = () => {
                 <span className="opacity-50 pt-4">
                   Vožnja u određene gradove i sela izvan Vinkovaca obavlja se po
                   zasebnom cjeniku.{" "}
-                  <Link to="/hr/cjenik">
+                  <Link to="/hr/cjenik" onClick={scrollToTop}>
                     <span className="underline underline-offset-4">
                       Za punu listu gradova i sela, kliknite ovdje.
                     </span>

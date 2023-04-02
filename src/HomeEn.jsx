@@ -21,6 +21,7 @@ import DemoCarousel from "./DemoCarousel";
 import Phone1 from "./assets/images/Phone.svg";
 import WhatsApp1 from "./assets/images/WhatsApp.svg";
 import Facebook1 from "./assets/images/Facebook.svg";
+import { scrollToTop } from "./ScrollToTop";
 const HomeEn = () => {
   return (
     <div>
@@ -235,7 +236,7 @@ const HomeEn = () => {
                           list.
                         </li>
                         <li>
-                          <Link to="/en/pricelist">
+                          <Link to="/en/pricelist" onClick={scrollToTop}>
                             <a href="" className="underline underline-offset-4">
                               You can find the price list here.
                             </a>
@@ -356,7 +357,7 @@ const HomeEn = () => {
                 </div>
                 <span className="opacity-50 pt-4">
                   Rides outside of Vinkovci are set by a fixed price list.
-                  <Link to="/en/pricelist">
+                  <Link to="/en/pricelist" onClick={scrollToTop}>
                     <a href="" className="underline underline-offset-4">
                       You can find the price list here.
                     </a>
