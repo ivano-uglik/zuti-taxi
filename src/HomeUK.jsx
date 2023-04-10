@@ -1,28 +1,19 @@
-import Home from "./Home";
 import Logo from "./assets/images/Logo.png";
-import HRV from "./assets/images/HRV.png";
-import ENG from "./assets/images/ENG.png";
+import uk from "./assets/images/uk.svg";
 import { Link as Link1 } from "react-scroll";
 import { Link } from "react-router-dom";
 import Phone from "./assets/images/Phone.png";
-import ImgTemp from "./components/ImgTemp";
 import PlavaVinkovacka from "./assets/images/PlavaVinkovacka.png";
 import OptikaMarko from "./assets/images/OptikaMarko.jpg";
-import Pattern from "./assets/images/blackAndYellow.png";
 import Facebook from "./assets/images/Facebook.png";
-import PhoneInvert from "./assets/images/PhoneInvert.png";
-import WhatsappInvert from "./assets/images/WhatsappInvert.png";
-import ViberButton from "./assets/images/ViberButton.png";
-import FacebookInvert from "./assets/images/FacebookInvert.png";
-import leftArrow from "./assets/images/LeftArrow.png";
-import rightArrow from "./assets/images/RightArrow.png";
 import taxi from "./assets/images/taxi.svg";
 import DemoCarousel from "./DemoCarousel";
 import Phone1 from "./assets/images/Phone.svg";
 import WhatsApp1 from "./assets/images/WhatsApp.svg";
 import Facebook1 from "./assets/images/Facebook.svg";
 import { scrollToTop } from "./ScrollToTop";
-const HomeEn = () => {
+import Dropdown from "./Dropdown";
+const HomeUK = () => {
   return (
     <div>
       {/* NUMBER NAVBAR, 5vh */}
@@ -59,29 +50,11 @@ const HomeEn = () => {
                 }}
               >
                 <div className="flex justify-around items-center cursor-pointer w-full gap-2">
-                  <img src={ENG} alt="" className="w-7 h-7" />
+                  <img src={uk} alt="" className="w-7 h-7" />
                   <span className="">EN</span>
                   <span>&#9660;</span>
 
-                  <div
-                    className="hidden absolute top-8 cursor-pointer"
-                    id="dropdown"
-                  >
-                    <div className="bg-black rounded-lg w-[4.7rem] text-taxiYellow py-1 text-end">
-                      <Link to="/hr">
-                        <div className="flex flex-row justify-between items-center py-2 px-1 hover:bg-taxiYellow hover:text-black">
-                          <img src={HRV} className="w-7 h-7" />
-                          <span>HR</span>
-                        </div>
-                      </Link>
-                      <Link to="/en">
-                        <div className="flex flex-row justify-between items-center py-2 px-1 hover:bg-taxiYellow hover:text-black">
-                          <img src={ENG} className="w-7 h-6" />
-                          <span>EN</span>
-                        </div>
-                      </Link>
-                    </div>
-                  </div>
+                  <Dropdown />
                 </div>
               </div>
             </div>
@@ -314,7 +287,7 @@ const HomeEn = () => {
                 <h1 className="font-bold text-3xl pb-4">In Vinkovci</h1>
                 <hr className="border-1 border-taxiBlack w-full pb-4" />
                 <h3 className="text-xl">00-24h</h3>
-                <h3 className="text-xl">Maks. 4 osobe</h3>
+                <h3 className="text-xl">Maximum of 4 people</h3>
                 <h3 className="text-xl">3km</h3>
                 <h1 className="font-bold text-4xl py-4">
                   3,00 &euro; / 22,60kn
@@ -456,4 +429,4 @@ const HomeEn = () => {
   );
 };
 
-export default HomeEn;
+export default HomeUK;

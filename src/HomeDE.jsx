@@ -1,5 +1,5 @@
 import Logo from "./assets/images/Logo.png";
-import hr from "./assets/images/hr.svg";
+import de from "./assets/images/de.svg";
 import { Link as Link1 } from "react-scroll";
 import { Link } from "react-router-dom";
 import Phone from "./assets/images/Phone.png";
@@ -14,7 +14,7 @@ import Facebook1 from "./assets/images/Facebook.svg";
 import { scrollToTop } from "./ScrollToTop";
 import Dropdown from "./Dropdown";
 
-const Home = () => {
+const HomeDE = () => {
   // var Carousel = require("react-responsive-carousel").Carousel;
 
   return (
@@ -27,7 +27,9 @@ const Home = () => {
               <div>
                 <img src={Phone} className="w-8 pr-2" />
               </div>
-              <h1 className="text-taxiYellow font-bold pr-2">099 230 2000</h1>
+              <h1 className="text-taxiYellow font-bold pr-2">
+                (+385) 099 230 2000
+              </h1>
               <div>
                 <img src={Phone} className="w-8 pr-2" />
               </div>
@@ -51,8 +53,8 @@ const Home = () => {
                 }}
               >
                 <div className="flex justify-around items-center cursor-pointer w-full gap-2">
-                  <img src={hr} alt="" className="w-7 h-7" />
-                  <span className="">HR</span>
+                  <img src={de} alt="" className="w-7 h-7" />
+                  <span className="">DE</span>
                   <span>&#9660;</span>
 
                   <Dropdown />
@@ -69,7 +71,7 @@ const Home = () => {
               duration={500}
               className="pr-8 text-lg"
             >
-              <button className="text-xl">Naslovna </button>
+              <button className="text-xl">Home</button>
             </Link1>
             <Link1
               to="cjenik"
@@ -79,7 +81,7 @@ const Home = () => {
               duration={500}
               className="pr-8 text-lg"
             >
-              <button className="text-xl">Cjenik</button>
+              <button className="text-xl">Preisliste</button>
             </Link1>
             <Link1
               to="kontakt"
@@ -103,25 +105,25 @@ const Home = () => {
         <div className="flex flex-col md:flex-row items-center h-full text-center bg-taxiYellow">
           <div className="flex flex-col justify-center gap-4 md:gap-16 items-center min-h-[50vh] h-full w-full p-2 md:p-8 pb-8">
             <h1 className="font-bold text-2xl xl:text-5xl pt-4 md:pt-auto">
-              Najbolji Taxi u Vinkovcima i okolici!
+              Bestes Taxi in Vinkovci und Umgebung!
             </h1>
             <p className="text-justify px-8 lg:px-32">
-              Dobrodošli na stranicu "Žuti Taxi Vinkovci", vodeće taxi službe u
-              Vinkovcima i okolici.{" "}
+              Willkommen auf der Website von Žuti Taxi Vinkovci ("Gelbes Taxi"),
+              dem führenden Taxidienst in Vinkovci.
               <p>
-                Naš tim profesionalnih vozača stoji Vam na raspolaganju 24 sata
-                dnevno, 7 dana u tjednu, kako bi Vam pružio siguran i ugodan
-                prijevoz po najpovoljnijim cijenama.{" "}
+                Unser Team von professionellen Fahrern steht Ihnen rund um die
+                Uhr zur Verfügung, um Ihnen sicheren und komfortablen Transport
+                zu den erschwinglichsten Preisen anzubieten.
               </p>
               <p>
-                S našom modernom voznom flotom i jednostavnom online
-                rezervacijom, uvjeravamo Vas u kvalitetnu i pouzdanu uslugu koja
-                će udovoljiti Vašim potrebama.
+                Mit unserer modernen Fahrzeugflotte und einfachen Online-Buchung
+                garantieren wir Ihnen einen hochwertigen und zuverlässigen
+                Service, der Ihren Bedürfnissen gerecht wird.
               </p>
             </p>
             <div className="font-extrabold text-3xl lg:text-[3.5rem] w-auto p-4 rounded-xl bg-taxiBlack text-white">
               <a href="tel:+385992302000">
-                <h1 className="">099 230 2000</h1>
+                <h1 className="">(+385) 099 230 2000</h1>
               </a>
             </div>
           </div>
@@ -145,30 +147,31 @@ const Home = () => {
                 <section className="flex md:hidden flex-col md:flex-row justify-center text-center md:gap-x-16 mx-8 md:mx-auto">
                   <article className="glassmorphism p-8 md:basis-1/3 h-full mb-12 md:mb-auto">
                     <ul>
-                      <li className="text-3xl font-bold">Gradska vožnja</li>
+                      <li className="text-3xl font-bold">Fahrt in Vinkovci</li>
                       <li className="text-2xl">00-24h</li>
-                      <li className="text-lg">Maks. 4 osobe</li>
+                      <li className="text-lg">Max. 4 Personen</li>
                       <li className="text-lg">3km</li>
                       <li className="text-4xl py-2 font-bold">
                         3,00 &euro; / 22,60kn
                       </li>
                       <hr className="border-1 border-black mb-4" />
                       <div className="flex flex-row w-full pb-2 justify-between">
-                        <li className="text-md">Vožnja po km</li>
+                        <li className="text-md">Pro Kilometer</li>
                         <li className="text-md">0,80 &euro; / 6,02kn</li>
                       </div>
                       <div className="flex flex-row w-full pb-2 justify-between">
-                        <li className="text-md">Čekanje po satu</li>
+                        <li className="text-md">Warten (pro Stunde)</li>
                         <li className="text-md">8,00 &euro; / 60,27kn</li>
                       </div>
                       <hr className="border-1 border-black mt-4" />
                       <div className="py-2 ">
                         <li className="font-light opacity-80">
-                          Vožnja unutar Vinkovaca obavlja se po cjeniku usluga.
+                          Fahrten innerhalb von Vinkovci erfolgen gemäß der
+                          Servicepreisliste.{" "}
                         </li>
                         <li className="font-light opacity-80">
-                          Taxi sat se uključuje po dolasku pred adresu
-                          korisnika.
+                          Die Taxiuhr wird bei Ankunft vor der Adresse des
+                          Kunden eingeschaltet.
                         </li>
                       </div>
                     </ul>
@@ -176,7 +179,7 @@ const Home = () => {
                   <article className="glassmorphism p-8 md:basis-1/3 h-full">
                     <ul>
                       <li className="text-3xl font-bold pb-4">
-                        Izvan Vinkovaca
+                        Außerhalb von Vinkovci
                       </li>
                       <div className="flex flex-row w-full pb-2 justify-between">
                         <li className="text-lg md:text-2xl text-start">
@@ -205,15 +208,18 @@ const Home = () => {
                       <hr className="border-1 border-black mt-4" />
                       <div className="pt-4 font-light">
                         <li>
-                          Vožnje izvan Vinkovaca se vode po fiksnom cjeniku.
+                          Fahrten in bestimmte Städte und Dörfer außerhalb von
+                          Vinkovci erfolgen gemäß einer separaten{" "}
                         </li>
                         <li>
-                          <Link to="/hr/cjenik" onClick={scrollToTop}>
+                          <Link to="/de/preisliste" onClick={scrollToTop}>
                             <span className="underline underline-offset-4 opacity-100">
-                              Za punu listu gradova i sela, kliknite ovdje.
+                              Für eine vollständige Liste von Städten und
+                              Dörfern klicken Sie hier.
                             </span>
                           </Link>
                         </li>
+                        <li>Für alle anderen Orte rufen Sie uns bitte an.</li>
                       </div>
                     </ul>
                   </article>
@@ -265,14 +271,16 @@ const Home = () => {
                 <div className="flex flex-col justify-around h-full gap-y-8">
                   <div className="">
                     <h2 className="text-lg">
-                      Nazovite ili pošaljite SMS poruku na:
+                      Rufen Sie an oder senden Sie eine SMS an:
                     </h2>
-                    <h1 className="text-4xl font-bold py-8">099 230 2000</h1>
+                    <h1 className="text-4xl font-bold py-8">
+                      (+385) 099 230 2000
+                    </h1>
                     <h1>SMS | Viber | WhatsApp</h1>
                   </div>
                   <p className="text-xs font-light opacity-80">
-                    *Ovisno o Vašem mobilnom operateru, standardne tarife poziva
-                    i SMS-a se primijenjuju.
+                    *Je nach Ihrem Mobilfunkanbieter gelten die standardmäßigen
+                    Anruf- und SMS-Gebühren.
                   </p>
                 </div>
               </article>
@@ -289,10 +297,10 @@ const Home = () => {
             {/* CJENIK */}
             <div className="bg-taxiYellow text-taxiBlack rounded-lg w-[40%] flex flex-col lg:px-16 xl:px-[6vw] lg:py-8 xl:py-[8vh] gap-8">
               <div className="flex items-center flex-col">
-                <h1 className="font-bold text-3xl pb-4">Gradska Vožnja</h1>
+                <h1 className="font-bold text-3xl pb-4">Fahrt in Vinkovci</h1>
                 <hr className="border-1 border-taxiBlack w-full pb-4" />
                 <h3 className="text-xl">00-24h</h3>
-                <h3 className="text-xl">Maks. 4 osobe</h3>
+                <h3 className="text-xl">Max. 4 Personen</h3>
                 <h3 className="text-xl">3km</h3>
                 <h1 className="font-bold text-4xl py-4">
                   3,00 &euro; / 22,60kn
@@ -300,21 +308,24 @@ const Home = () => {
                 <hr className="border-1 border-taxiBlack w-full" />
                 <div className="w-full pt-4 xl:px-4">
                   <div className="flex flex-row justify-between">
-                    <h3>Vožnja po km</h3>
+                    <h3>Pro Kilometer</h3>
                     <h3>0,80 &euro; / 6,02kn</h3>
                   </div>
                   <div className="flex flex-row justify-between">
-                    <h3>Čekanje po satu</h3>
+                    <h3>Warten (pro Stunde)</h3>
                     <h3>8,00 &euro; / 60,27kn</h3>
                   </div>
                 </div>
                 <span className="opacity-50 pt-4">
-                  Vožnja unutar Vinkovaca obavlja se po cjeniku usluga. Taxi sat
-                  se uključuje po dolasku pred adresu korisnika.
+                  Fahrten innerhalb von Vinkovci erfolgen gemäß der
+                  Servicepreisliste. Die Taxiuhr wird bei Ankunft vor der
+                  Adresse des Kunden eingeschaltet.
                 </span>
               </div>
               <div className="flex items-center flex-col">
-                <h1 className="font-bold text-3xl pb-4">Izvan Vinkovaca</h1>
+                <h1 className="font-bold text-3xl pb-4">
+                  Außerhalb von Vinkovci
+                </h1>
                 <hr className="border-1 border-taxiBlack w-full" />
                 <div className="w-full xl:px-4 pt-4">
                   <div className="flex flex-row justify-between ">
@@ -331,16 +342,17 @@ const Home = () => {
                   </div>
                 </div>
                 <span className="opacity-50 pt-4">
-                  Vožnja u određene gradove i sela izvan Vinkovaca obavlja se po
-                  zasebnom cjeniku.{" "}
-                  <Link to="/hr/cjenik" onClick={scrollToTop}>
+                  Fahrten in bestimmte Städte und Dörfer außerhalb von Vinkovci
+                  erfolgen gemäß einer separaten Preisliste.
+                  <Link to="/de/preisliste" onClick={scrollToTop}>
                     <span className="underline underline-offset-4">
-                      Za punu listu gradova i sela, kliknite ovdje.
+                      Für eine vollständige Liste von Städten und Dörfern
+                      klicken Sie hier.
                     </span>
                   </Link>
                 </span>
                 <span className="opacity-50">
-                  Za sva ostala mjesta molimo da nas nazovete.
+                  Für alle anderen Orte rufen Sie uns bitte an.
                 </span>
               </div>
             </div>
@@ -360,9 +372,9 @@ const Home = () => {
                   </a>
                 </div>
                 <h1 className="text-xl pt-8">
-                  Nazovite ili pošaljite SMS poruku na:
+                  Rufen Sie an oder senden Sie eine SMS an:
                 </h1>
-                <h1 className="font-bold text-4xl py-4">099 230 2000</h1>
+                <h1 className="font-bold text-4xl py-4">(+385) 099 230 2000</h1>
                 <h1 className="text-lg">SMS | Viber | Whatsapp</h1>
               </div>
 
@@ -378,8 +390,8 @@ const Home = () => {
                   />
                 </a>
                 <h1 className="text-xl pt-8">
-                  Posjetite našu Facebook stranicu ili pošaljite poruku na naš
-                  Messenger:
+                  Besuchen Sie unsere Facebook-Seite oder senden Sie uns eine
+                  Nachricht auf unserem Messenger:
                 </h1>
                 <div className="flex justify-center pt-4">
                   <iframe
@@ -414,9 +426,11 @@ const Home = () => {
               </div>
             </div>
             <div className="flex justify-center flex-col text-center items-center py-4 text-xs md:text-base px-2">
-              <h1>&#169; 2023 - Žuti Taxi Vinkovci. Sva prava pridržana.</h1>
               <h1>
-                Izrada web stranice - Ivano Uglik&nbsp;|&nbsp;
+                &#169; 2023 - Žuti Taxi Vinkovci. Alle Rechte vorbehalten.
+              </h1>
+              <h1>
+                Webseitenerstellung - Ivano Uglik.&nbsp;|&nbsp;
                 <a
                   href="https://github.com/ivano-uglik/zuti-taxi"
                   className="underline"
@@ -433,4 +447,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeDE;
