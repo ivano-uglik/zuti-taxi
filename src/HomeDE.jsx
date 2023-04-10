@@ -142,7 +142,7 @@ const HomeDE = () => {
             <div>
               <div className=" md:w-full md:h-screen flex justify-center flex-col w-full h-full bg-taxiBlack pb-8">
                 <div className="flex md:hidden justify-center py-8 font-bold text-3xl md:text-4xl text-taxiYellow">
-                  <h1>Cjenik</h1>
+                  <h1>Preisliste</h1>
                 </div>
                 <section className="flex md:hidden flex-col md:flex-row justify-center text-center md:gap-x-16 mx-8 md:mx-auto">
                   <article className="glassmorphism p-8 md:basis-1/3 h-full mb-12 md:mb-auto">
@@ -240,8 +240,8 @@ const HomeDE = () => {
                 </div>
                 <div className="flex flex-col pt-6 h-full gap-y-8">
                   <h1 className="text-lg">
-                    Posjetite našu Facebook stranicu ili pošaljite poruku na naš
-                    Messenger:{" "}
+                    Besuchen Sie unsere Facebook-Seite oder senden Sie uns eine
+                    Nachricht auf unserem Messenger:
                   </h1>
                   {/* <a
                     href="https://web.facebook.com/people/%C5%BDuti-Taxi-Vinkovci/100057088434942/"
