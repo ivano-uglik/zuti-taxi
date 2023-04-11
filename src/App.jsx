@@ -8,8 +8,11 @@ import HomeDE from "./HomeDE";
 import CjenikDE from "./CjenikDE";
 import HomeTR from "./HomeTR";
 import CjenikTR from "./CjenikTR";
-import { app } from "../firebaseConfig";
+import { app, analytics } from "../firebaseConfig";
+
 const App = () => {
+  app;
+  analytics;
   return (
     <div>
       <Routes>
