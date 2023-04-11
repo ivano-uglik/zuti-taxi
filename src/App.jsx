@@ -9,6 +9,8 @@ import CjenikDE from "./CjenikDE";
 import HomeTR from "./HomeTR";
 import CjenikTR from "./CjenikTR";
 import { app, analytics } from "../firebaseConfig";
+import HomeFR from "./HomeFR";
+import CjenikFR from "./CjenikFR";
 
 const App = () => {
   app;
@@ -25,6 +27,8 @@ const App = () => {
         <Route path="/de/preisliste" element={<CjenikDE />} />
         <Route path="/tr" element={<HomeTR />} />
         <Route path="/tr/fiyatlandirma" element={<CjenikTR />} />
+        <Route path="/fr" element={<HomeFR />} />
+        <Route path="/fr/tarifs" element={<CjenikFR />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </div>
