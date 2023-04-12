@@ -5,7 +5,7 @@ import { lokacije } from "./Lokacije";
 const CjenikTR = () => {
   function titleSet() {
     useEffect(() => {
-      document.title = "Preisliste - Žuti Taxi Vinkovci";
+      document.title = "Fiyatlandırma - Žuti Taxi Vinkovci";
     }, []);
   }
 
