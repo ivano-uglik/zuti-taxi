@@ -1,11 +1,13 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import PlavaVinkovacka from "./assets/images/PlavaVinkovacka.png";
-import Taxi from "./assets/images/taxiTEMPDark.png";
+// import Taxi from "./assets/images/taxiTEMPDark.png";
 import TaxiOne from "./assets/images/taxiTEMPone.jpg";
-import TaxiTwo from "./assets/images/taxiTEMPtwo.jpg";
+import taxiA from "./assets/images/taxiA.webp";
+import taxiB from "./assets/images/taxiB.webp";
+import taxiC from "./assets/images/taxiC.webp";
+import taxiD from "./assets/images/taxiD.webp";
+import taxiE from "./assets/images/taxiE.webp";
 
 class DemoCarousel extends Component {
   render() {
@@ -22,21 +24,51 @@ class DemoCarousel extends Component {
         swipeable={false}
         showStatus={false}
       >
+        <div className="h-[82vh] object-cover object-center">
+          <img
+            src={taxiE}
+            className="w-auto h-full object-cover object-center"
+          />
+        </div>
         <div className="h-[82vh] object-cover">
           <img
+            src={taxiD}
+            className="w-auto h-full object-cover object-center"
+          />
+        </div>
+        {/* <div className="h-[82vh] object-cover">
+          <img
             src={Taxi}
+            className="w-auto h-full object-cover object-center"
+          />
+        </div> */}
+        <div className="h-[82vh] object-cover object-center">
+          <img
+            src={taxiB}
+            className="w-auto h-full object-cover object-center"
+          />
+        </div>
+        <div className="h-[82vh] object-cover object-center">
+          <img
+            src={taxiA}
+            className="w-auto h-full object-cover object-center"
+          />
+        </div>
+        <div className="h-[82vh] object-cover object-center">
+          <img
+            src={taxiC}
+            className="w-auto h-full object-cover object-center"
+          />
+        </div>
+        <div className="h-[82vh] object-cover object-center">
+          <img
+            src={taxiD}
             className="w-auto h-full object-cover object-center"
           />
         </div>
         <div className="h-[82vh] object-cover">
           <img
             src={TaxiOne}
-            className="w-auto h-full object-cover object-center"
-          />
-        </div>
-        <div className="h-[82vh] object-cover">
-          <img
-            src={TaxiTwo}
             className="w-auto h-full object-cover object-center"
           />
         </div>

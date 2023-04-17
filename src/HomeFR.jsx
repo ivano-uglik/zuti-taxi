@@ -209,7 +209,7 @@ const HomeFR = () => {
                           une liste de tarifs fixes.
                         </li>
                         <li>
-                          <Link to="/de/preisliste" onClick={scrollToTop}>
+                          <Link to="/fr/tarifs" onClick={scrollToTop}>
                             <span className="underline underline-offset-4 opacity-100">
                               Vous pouvez trouver la liste des tarifs ici.
                             </span>
@@ -297,7 +297,7 @@ const HomeFR = () => {
             {/* CJENIK */}
             <div className="bg-taxiYellow text-taxiBlack rounded-lg w-[40%] flex flex-col lg:px-16 xl:px-[6vw] lg:py-8 xl:py-[8vh] gap-8">
               <div className="flex items-center flex-col">
-                <h1 className="font-bold text-3xl pb-4">Fahrt in Vinkovci</h1>
+                <h1 className="font-bold text-3xl pb-4">À Vinkovci</h1>
                 <hr className="border-1 border-taxiBlack w-full pb-4" />
                 <h3 className="text-xl">00-24h</h3>
                 <h3 className="text-xl">Maximum de 4 personnes</h3>
@@ -343,7 +343,7 @@ const HomeFR = () => {
                 <span className="opacity-50 pt-4">
                   Les trajets en dehors de Vinkovci sont établis selon une liste
                   de tarifs fixes.
-                  <Link to="/de/preisliste" onClick={scrollToTop}>
+                  <Link to="/fr/tarifs" onClick={scrollToTop}>
                     <span className="underline underline-offset-4">
                       Vous pouvez trouver la liste des tarifs ici.
                     </span>

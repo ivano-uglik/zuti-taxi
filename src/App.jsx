@@ -8,9 +8,9 @@ import HomeDE from "./HomeDE";
 import CjenikDE from "./CjenikDE";
 import HomeTR from "./HomeTR";
 import CjenikTR from "./CjenikTR";
-import { app, analytics } from "../firebaseConfig";
 import HomeFR from "./HomeFR";
 import CjenikFR from "./CjenikFR";
+import { app, analytics } from "../firebaseConfig";
 
 const App = () => {
   app;

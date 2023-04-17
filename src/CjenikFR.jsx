@@ -21,7 +21,7 @@ const CjenikFR = () => {
           <img src={taxi} className="w-12 hidden md:block" />
         </div>
         <div className="w-full h-8 blackAndYellowStatic" />
-        <div className="w-[50vw] pt-8 flex flex-col gap-4 px-8 xl:px-24 shadowCjenik list-none">
+        <div className="md:w-[50vw] pt-8 flex flex-col gap-4 px-8 xl:px-24 shadowCjenik list-none">
           {lokacije.map((mjesto) => (
             <div className="flex justify-between" key={mjesto.id}>
               <li>{mjesto.mjesto}</li>
